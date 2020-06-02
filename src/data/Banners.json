@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "value": "miranda_dorando",
+      "label": "Miranda & Dorando"
+    },
+    {
+      "value": "lucia_adelard",
+      "label": "Lucia & Adelard"
+    }
+  ],
+  "miranda_dorando": {
+    "value": 1,
+    "key": "miranda_dorando",
+    "label": "Miranda & Dorando",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/miranda_dorando.jpg",
+    "featured_items": [
+      {
+        "key": 57,
+        "type": "unit"
+      },
+      {
+        "key": 58,
+        "type": "unit"
+      },
+      {
+        "key": 47,
+        "type": "card"
+      },
+      {
+        "key": 48,
+        "type": "card"
+      }
+    ],
+    "gacha_items": [
+      {
+        "key": 57,
+        "name": "Miranda",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 58,
+        "name": "Dorando",
+        "rarity": "mr",
+        "type": "unit",
+        "chance": 1.50092
+      },
+      {
+        "key": 47,
+        "name": "Lamia Queen",
+        "rarity": "mr",
+        "type": "card",
+        "chance": 1.50092
+      },
+      {
+        "key": 48,
+        "name": "White Bodyguard",
+        "rarity": "mr",
+        "type": "card",
+        "chance": 1.50092
+      }
+    ]
+  },
+  "lucia_adelard": {
+    "value": 2,
+    "key": "lucia_adelard",
+    "label": "Lucia & Adelard",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/lucia_adelard.jpg",
+    "featured_items": [
+      {
+        "key": 59,
+        "type": "unit"
+      },
+      {
+        "key": 60,
+        "type": "unit"
+      },
+      {
+        "key": 51,
+        "type": "card"
+      },
+      {
+        "key": 52,
+        "type": "card"
+      }
+    ],
+    "gacha_items": [
+      {
+        "key": 59,
+        "name": "Lucia",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 60,
+        "name": "Adelard",
+        "rarity": "mr",
+        "type": "unit",
+        "chance": 1.50092
+      },
+      {
+        "key": 51,
+        "name": "Tetra Sylphid",
+        "rarity": "ur",
+        "type": "card",
+        "chance": 1.50092
+      },
+      {
+        "key": 52,
+        "name": "The Road to Vengeance",
+        "rarity": "mr",
+        "type": "card",
+        "chance": 1.50092
+      }
+    ]
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "ur_unit": [
+    {
+      "key": 1,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 2,
+      "limited": false,
+      "name": "Gilgamesh"
+    },
+    {
+      "key": 3,
+      "limited": false,
+      "name": "Oelde"
+    },
+    {
+      "key": 4,
+      "limited": false,
+      "name": "Mediena"
+    },
+    {
+      "key": 5,
+      "limited": false,
+      "name": "Ayaka"
+    },
+    {
+      "key": 6,
+      "limited": false,
+      "name": "Aileen"
+    },
+    {
+      "key": 7,
+      "limited": false,
+      "name": "Rob"
+    },
+    {
+      "key": 8,
+      "limited": false,
+      "name": "Engelbert"
+    },
+    {
+      "key": 9,
+      "limited": false,
+      "name": "Macherie"
+    },
+    {
+      "key": 10,
+      "limited": false,
+      "name": "Xixa"
+    },
+    {
+      "key": 41,
+      "limited": false,
+      "name": "Thancred"
+    },
+    {
+      "key": 44,
+      "limited": false,
+      "name": "Fredericka"
+    },
+    {
+      "key": 47,
+      "limited": false,
+      "name": "Yerma"
+    },
+    {
+      "key": 49,
+      "limited": true,
+      "name": "Xmas unit"
+    },
+    {
+      "key": 50,
+      "limited": true,
+      "name": "Xmas Macherie"
+    },
+    {
+      "key": 52,
+      "limited": true,
+      "name": "Ramza"
+    },
+    {
+      "key": 53,
+      "limited": true,
+      "name": "Orlandeau"
+    },
+    {
+      "key": 55,
+      "limited": false,
+      "name": "Whisper"
+    },
+    {
+      "key": 56,
+      "limited": false,
+      "name": "Kitone"
+    },
+    {
+      "key": 57,
+      "limited": false,
+      "name": "Miranda"
+    },
+    {
+      "key": 59,
+      "limited": false,
+      "name": "Lu'chia"
+    }
+  ],
+  "mr_unit": [
+    {
+      "key": 11,
+      "limited": false,
+      "name": "Mont"
+    },
+    {
+      "key": 12,
+      "limited": false,
+      "name": "mr unit"
+    },
+    {
+      "key": 13,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 14,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 15,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 16,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 17,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 18,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 19,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 20,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 21,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 22,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 23,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 24,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 25,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 40,
+      "limited": true,
+      "name": "Yosthola"
+    },
+    {
+      "key": 45,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 48,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 51,
+      "limited": true,
+      "name": "Sterne"
+    },
+    {
+      "key": 54,
+      "limited": true,
+      "name": "Gaffgarion"
+    },
+    {
+      "key": 58,
+      "limited": false,
+      "name": "Dorando"
+    },
+    {
+      "key": 60,
+      "limited": false,
+      "name": "Sterne"
+    }
+  ],
+  "sr_unit": [
+    {
+      "key": 26,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 27,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 28,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 29,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 30,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 31,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 32,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 33,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 34,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 35,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 36,
+      "limited": false,
+      "name": "Sterne"
+    }
+  ],
+  "r_unit": [
+    {
+      "key": 37,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 38,
+      "limited": false,
+      "name": "Sterne"
+    },
+    {
+      "key": 39,
+      "limited": false,
+      "name": "Sterne"
+    }
+  ],
+  "ur_card": [
+    {
+      "key": 1,
+      "limited": true,
+      "Name": "default"
+    },
+    {
+      "key": 2,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 29,
+      "limited": false,
+      "Name": "Ifrit"
+    },
+    {
+      "key": 30,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 31,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 32,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 33,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 34,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 35,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 39,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 40,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 42,
+      "limited": true,
+      "Name": "default xmas"
+    },
+    {
+      "key": 43,
+      "limited": true,
+      "Name": "Ramza Agi"
+    },
+    {
+      "key": 44,
+      "limited": false,
+      "Name": "Odin"
+    },
+    {
+      "key": 51,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 52,
+      "limited": false,
+      "Name": "default"
+    }
+  ],
+  "mr_card": [
+    {
+      "key": 3,
+      "limited": false,
+      "Name": "Behemoth"
+    },
+    {
+      "key": 4,
+      "limited": false,
+      "Name": "Vow of Love"
+    },
+    {
+      "key": 5,
+      "limited": false,
+      "Name": "Marlboro"
+    },
+    {
+      "key": 6,
+      "limited": true,
+      "Name": "default"
+    },
+    {
+      "key": 7,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 8,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 9,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 36,
+      "limited": false,
+      "Name": "Iron Giant"
+    },
+    {
+      "key": 37,
+      "limited": false,
+      "Name": "Kitone"
+    },
+    {
+      "key": 38,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 41,
+      "limited": true,
+      "Name": "default xmas"
+    },
+    {
+      "key": 46,
+      "limited": true,
+      "Name": "default"
+    },
+    {
+      "key": 47,
+      "limited": false,
+      "Name": "Lamia Queen"
+    },
+    {
+      "key": 48,
+      "limited": false,
+      "Name": "White Bodyguard"
+    },
+    {
+      "key": 52,
+      "limited": false,
+      "Name": "default"
+    }
+  ],
+  "sr_card": [
+    {
+      "key": 10,
+      "limited": false,
+      "Name": "Cactuar"
+    },
+    {
+      "key": 11,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 12,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 12,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 13,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 14,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 15,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 16,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 17,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 18,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 19,
+      "limited": false,
+      "Name": "default"
+    }
+  ],
+  "r_card": [
+    {
+      "key": 20,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 21,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 22,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 23,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 24,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 25,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 26,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 27,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 28,
+      "limited": false,
+      "Name": "default"
+    },
+    {
+      "key": 45,
+      "limited": false,
+      "Name": "default"
+    }
+  ]
+}
