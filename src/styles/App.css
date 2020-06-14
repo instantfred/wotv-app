@@ -61,9 +61,9 @@ div .featured-items {
 }
 
 .featured-items .featured-item {
-  height: 70px;
+  height: 60px;
   padding: 7px;
-  width: 70px;
+  width: 60px;
 }
 
 .summon-buttons {
@@ -103,13 +103,14 @@ div .featured-items {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
 }
 
 .summon-results .summon-item {
-  height: 80px;
+  height: 70px;
   padding: 7px;
-  width: 80px;
+  width: 70px;
 }
 
 .reset-btn:hover {
