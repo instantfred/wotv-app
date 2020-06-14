@@ -6,7 +6,7 @@
     },
     {
       "value": "lucia_adelard",
-      "label": "Lucia & Adelard"
+      "label": "Lu'Cia & Adelard"
     }
   ],
   "miranda_dorando": {
@@ -68,7 +68,7 @@
   "lucia_adelard": {
     "value": 2,
     "key": "lucia_adelard",
-    "label": "Lucia & Adelard",
+    "label": "Lu'Cia & Adelard",
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/lucia_adelard.jpg",
@@ -93,7 +93,7 @@
     "gacha_items": [
       {
         "key": 59,
-        "name": "Lucia",
+        "name": "Lu'Cia",
         "rarity": "ur",
         "type": "unit",
         "chance": 0.80098

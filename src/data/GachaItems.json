@@ -3,7 +3,7 @@
     {
       "key": 1,
       "limited": false,
-      "name": "Sterne"
+      "name": "Sterne Leonis"
     },
     {
       "key": 2,
@@ -13,7 +13,7 @@
     {
       "key": 3,
       "limited": false,
-      "name": "Oelde"
+      "name": "Oelde Leonis"
     },
     {
       "key": 4,
@@ -33,7 +33,7 @@
     {
       "key": 7,
       "limited": false,
-      "name": "Rob"
+      "name": "Rob Hourne"
     },
     {
       "key": 8,
@@ -43,7 +43,7 @@
     {
       "key": 9,
       "limited": false,
-      "name": "Macherie"
+      "name": "Macherie Hourne"
     },
     {
       "key": 10,
@@ -103,79 +103,79 @@
     {
       "key": 59,
       "limited": false,
-      "name": "Lu'chia"
+      "name": "Lu'Cia"
     }
   ],
   "mr_unit": [
     {
       "key": 12,
       "limited": false,
-      "name": "mr unit"
+      "name": "Lilyth"
     },
     {
       "key": 13,
       "limited": false,
-      "name": "Sterne"
+      "name": "Marguerite"
     },
     {
       "key": 14,
       "limited": false,
-      "name": "Sterne"
+      "name": "Khury"
     },
     {
       "key": 15,
       "limited": false,
-      "name": "Sterne"
+      "name": "Helena Leonis"
     },
     {
       "key": 16,
       "limited": false,
-      "name": "Sterne"
+      "name": "Cadia"
     },
     {
       "key": 17,
       "limited": false,
-      "name": "Sterne"
+      "name": "Lorenzo"
     },
     {
       "key": 18,
       "limited": false,
-      "name": "Sterne"
+      "name": "Owe"
     },
     {
       "key": 19,
       "limited": false,
-      "name": "Sterne"
+      "name": "Meriluke"
     },
     {
       "key": 20,
       "limited": false,
-      "name": "Sterne"
+      "name": "Schuzelt"
     },
     {
       "key": 21,
       "limited": false,
-      "name": "Sterne"
+      "name": "Ramada"
     },
     {
       "key": 22,
       "limited": false,
-      "name": "Sterne"
+      "name": "Vistralle"
     },
     {
       "key": 23,
       "limited": false,
-      "name": "Sterne"
+      "name": "Grace"
     },
     {
       "key": 24,
       "limited": false,
-      "name": "Sterne"
+      "name": "Fina"
     },
     {
       "key": 25,
       "limited": false,
-      "name": "Sterne"
+      "name": "Rairyuu"
     },
     {
       "key": 40,
@@ -185,17 +185,17 @@
     {
       "key": 45,
       "limited": false,
-      "name": "Sterne"
+      "name": "Shadowlynx"
     },
     {
       "key": 48,
       "limited": false,
-      "name": "Sterne"
+      "name": "Nasha"
     },
     {
       "key": 51,
       "limited": true,
-      "name": "Sterne"
+      "name": "Etre"
     },
     {
       "key": 54,
@@ -210,165 +210,165 @@
     {
       "key": 60,
       "limited": false,
-      "name": "Sterne"
+      "name": "Adelard"
     }
   ],
   "sr_unit": [
     {
       "key": 26,
       "limited": false,
-      "name": "Sterne"
+      "name": "Naiah"
     },
     {
       "key": 27,
       "limited": false,
-      "name": "Sterne"
+      "name": "Vallaide"
     },
     {
       "key": 28,
       "limited": false,
-      "name": "Sterne"
+      "name": "Serjes"
     },
     {
       "key": 29,
       "limited": false,
-      "name": "Sterne"
+      "name": "Sosha"
     },
     {
       "key": 30,
       "limited": false,
-      "name": "Sterne"
+      "name": "Baelo"
     },
     {
       "key": 31,
       "limited": false,
-      "name": "Sterne"
+      "name": "Murmur"
     },
     {
       "key": 32,
       "limited": false,
-      "name": "Sterne"
+      "name": "Vadim"
     },
     {
       "key": 33,
       "limited": false,
-      "name": "Sterne"
+      "name": "Yuni"
     },
     {
       "key": 34,
       "limited": false,
-      "name": "Sterne"
+      "name": "Severo"
     },
     {
       "key": 35,
       "limited": false,
-      "name": "Sterne"
+      "name": "Phoebe"
     },
     {
       "key": 36,
       "limited": false,
-      "name": "Sterne"
+      "name": "Leela"
     }
   ],
   "r_unit": [
     {
       "key": 37,
       "limited": false,
-      "name": "Sterne"
+      "name": "Miche"
     },
     {
       "key": 38,
       "limited": false,
-      "name": "Sterne"
+      "name": "Mia"
     },
     {
       "key": 39,
       "limited": false,
-      "name": "Sterne"
+      "name": "Learte"
     }
   ],
   "ur_card": [
     {
       "key": 1,
       "limited": true,
-      "Name": "default"
+      "Name": "Scions of Shadow"
     },
     {
       "key": 2,
       "limited": false,
-      "Name": "default"
+      "Name": "Rock Cliff Titan, Golem"
     },
     {
       "key": 29,
       "limited": false,
-      "Name": "Ifrit"
+      "Name": "Howl of Ferocious Blaze, Ifrit"
     },
     {
       "key": 30,
       "limited": false,
-      "Name": "default"
+      "Name": "Second Division of the Kingdom of Leonis, «Caelum»"
     },
     {
       "key": 31,
       "limited": false,
-      "Name": "default"
+      "Name": "Becoming Stronger Than Anyone Else"
     },
     {
       "key": 32,
       "limited": false,
-      "Name": "default"
+      "Name": "Trousseau​"
     },
     {
       "key": 33,
       "limited": false,
-      "Name": "default"
+      "Name": "Echoing Screams"
     },
     {
       "key": 34,
       "limited": false,
-      "Name": "default"
+      "Name": "Dashing Over a Snowy Field"
     },
     {
       "key": 35,
       "limited": false,
-      "Name": "default"
+      "Name": "Aquatic Songstress, Siren"
     },
     {
       "key": 39,
       "limited": false,
-      "Name": "default"
+      "Name": "Freezer of All, Shiva"
     },
     {
       "key": 40,
       "limited": false,
-      "Name": "default"
+      "Name": "Roaring Thunderclap, Ramuh"
     },
     {
       "key": 42,
       "limited": true,
-      "Name": "default xmas"
+      "Name": "Frederika's Dream"
     },
     {
       "key": 43,
       "limited": true,
-      "Name": "Ramza Agi"
+      "Name": "Scion of House Beoulve"
     },
     {
       "key": 44,
       "limited": false,
-      "Name": "Odin"
+      "Name": "Realm Reaver, Odin"
     },
     {
       "key": 51,
       "limited": false,
-      "Name": "default"
+      "Name": "Gale-Begetting Heavenly Four, Tetra Sylphid"
     }
   ],
   "mr_card": [
     {
       "key": 3,
       "limited": false,
-      "Name": "Behemoth"
+      "Name": "Malevolent Legendary Beast, Behemoth"
     },
     {
       "key": 4,
@@ -378,176 +378,171 @@
     {
       "key": 5,
       "limited": false,
-      "Name": "Marlboro"
+      "Name": "Defiling Curse, Malboro"
     },
     {
       "key": 6,
       "limited": true,
-      "Name": "default"
+      "Name": "Shadowbringers"
     },
     {
       "key": 7,
       "limited": false,
-      "Name": "default"
+      "Name": "Birth of New Life"
     },
     {
       "key": 8,
       "limited": false,
-      "Name": "default"
+      "Name": "Sharpened Concentration"
     },
     {
       "key": 9,
       "limited": false,
-      "Name": "default"
+      "Name": "Fleeting Tranquility"
     },
     {
       "key": 36,
       "limited": false,
-      "Name": "Iron Giant"
+      "Name": "Metal Daemon, Iron Giant"
     },
     {
       "key": 37,
       "limited": false,
-      "Name": "Kitone"
+      "Name": "Secret Orders"
     },
     {
       "key": 38,
       "limited": false,
-      "Name": "default"
+      "Name": "Cleansing the Mind"
     },
     {
       "key": 41,
       "limited": true,
-      "Name": "default xmas"
+      "Name": "moogle xmas"
     },
     {
       "key": 46,
       "limited": true,
-      "Name": "default"
+      "Name": "Greetings from Afar"
     },
     {
       "key": 47,
       "limited": false,
-      "Name": "Lamia Queen"
+      "Name": "Seductive Serpent, Lamia Queen"
     },
     {
       "key": 48,
       "limited": false,
-      "Name": "White Bodyguard"
+      "Name": "Snow-White Guard"
     },
     {
       "key": 52,
       "limited": false,
-      "Name": "default"
+      "Name": "Path to Revenge"
     }
   ],
   "sr_card": [
     {
       "key": 10,
       "limited": false,
-      "Name": "Cactuar"
+      "Name": "Instantaneous 1,000 Needles, Cactuar"
     },
     {
       "key": 11,
       "limited": false,
-      "Name": "default"
+      "Name": "Enormous Avian, Zuu"
     },
     {
       "key": 12,
       "limited": false,
-      "Name": "default"
-    },
-    {
-      "key": 12,
-      "limited": false,
-      "Name": "default"
+      "Name": "Magic Eye Beam, Floateye"
     },
     {
       "key": 13,
       "limited": false,
-      "Name": "default"
+      "Name": "Fun Time"
     },
     {
       "key": 14,
       "limited": false,
-      "Name": "default"
+      "Name": "Long-Awaited Holiday"
     },
     {
       "key": 15,
       "limited": false,
-      "Name": "default"
+      "Name": "Gluttonous King's Arrival"
     },
     {
       "key": 16,
       "limited": false,
-      "Name": "default"
+      "Name": "Beguiling Witch"
     },
     {
       "key": 17,
       "limited": false,
-      "Name": "default"
+      "Name": "Great Detective Little Leela"
     },
     {
       "key": 18,
       "limited": false,
-      "Name": "default"
+      "Name": "Explosive Orb, Bomb"
     },
     {
       "key": 19,
       "limited": false,
-      "Name": "default"
+      "Name": "Herculean Demon, Ogre"
     }
   ],
   "r_card": [
     {
       "key": 20,
       "limited": false,
-      "Name": "default"
+      "Name": "Hourne Castle"
     },
     {
       "key": 21,
       "limited": false,
-      "Name": "default"
+      "Name": "Leonis Castle"
     },
     {
       "key": 22,
       "limited": false,
-      "Name": "default"
+      "Name": "Dynverk Cathedral"
     },
     {
       "key": 23,
       "limited": false,
-      "Name": "default"
+      "Name": "Wezette Castle"
     },
     {
       "key": 24,
       "limited": false,
-      "Name": "default"
+      "Name": "Flag of Wezette"
     },
     {
       "key": 25,
       "limited": false,
-      "Name": "default"
+      "Name": "Flag of Leonis"
     },
     {
       "key": 26,
       "limited": false,
-      "Name": "default"
+      "Name": "Flag of the Crystal Sanctum"
     },
     {
       "key": 27,
       "limited": false,
-      "Name": "default"
+      "Name": "Flag of Hourne"
     },
     {
       "key": 28,
       "limited": false,
-      "Name": "default"
+      "Name": "Flag of Fennes"
     },
     {
       "key": 45,
       "limited": false,
-      "Name": "default"
+      "Name": "Fennes Castle"
     }
   ]
 }
