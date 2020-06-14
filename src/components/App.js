@@ -11,7 +11,6 @@ class App extends React.Component {
           <div className="nav-title">Summon Simulator</div>
         </nav>
         <Gacha />
-        <UpdatesLog />
       </div>
     );
   }

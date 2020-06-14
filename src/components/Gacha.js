@@ -21,11 +21,31 @@ class Gacha extends React.Component {
 
   singleSummon = (event) => {
     event.preventDefault();
-    this.setState({ totalVisiore: this.state.totalVisiore + 200 });
-    this.setState({ showResults: true });
+    this.addVisiore(200);
     var partialResult = this.buildSpec(unitCardWeights.data)();
     var result = this.gachaItemPicker(gachaItems[partialResult])();
-    this.setState({ summonResult: { id: result, type: partialResult } });
+    this.setState({
+      summonResult: [{ id: result, type: partialResult }],
+    });
+  };
+
+  multiSummon = (event) => {
+    var results = [];
+    event.preventDefault();
+    this.addVisiore(2000);
+    for (var i = 0; i < 10; i++) {
+      var partialResult = this.buildSpec(unitCardWeights.data)();
+      results.push({
+        id: this.gachaItemPicker(gachaItems[partialResult])(),
+        type: partialResult,
+      });
+    }
+    this.setState({ summonResult: results });
+  };
+
+  addVisiore = (value) => {
+    this.setState({ totalVisiore: this.state.totalVisiore + value });
+    this.setState({ showResults: true });
   };
 
   gachaItemPicker = (possibleItems) => {
@@ -137,12 +157,20 @@ class Gacha extends React.Component {
           </div>
           <div className="summon-buttons">
             {this.state.enableSummon && (
-              <input
-                type="button"
-                className="summon-btn"
-                onClick={this.singleSummon}
-                value="Summon x1"
-              />
+              <span>
+                <input
+                  type="button"
+                  className="summon-btn"
+                  onClick={this.singleSummon}
+                  value="Summon x1"
+                />
+                <input
+                  type="button"
+                  className="summon-btn"
+                  onClick={this.multiSummon}
+                  value="Summon x10"
+                />
+              </span>
             )}
             {this.state.totalVisiore > 0 && (
               <input
@@ -156,18 +184,17 @@ class Gacha extends React.Component {
         </form>
         {this.state.showResults && (
           <div className="summon-results">
-            <div>
+            {this.state.summonResult.map((result, index) => (
               <img
+                key={index}
                 className="summon-item"
                 alt="result"
-                src={this.getImagePath(
-                  this.state.summonResult.type,
-                  this.state.summonResult.id
-                )}
+                src={this.getImagePath(result.type, result.id)}
               />
-            </div>
+            ))}
           </div>
         )}
+
         <div>
           Total Spent:{" "}
           <img
