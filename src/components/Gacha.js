@@ -187,7 +187,7 @@ class Gacha extends React.Component {
             {this.state.summonResult.map((result, index) => (
               <img
                 key={index}
-                className="summon-item"
+                className={`summon-item ${result.type}`}
                 alt="result"
                 src={this.getImagePath(result.type, result.id)}
               />
