@@ -51,7 +51,7 @@ class Gacha extends React.Component {
   gachaItemPicker = (possibleItems) => {
     var spec = {};
     var nonLimitedItems = [];
-    var basePercentage = 1 / possibleItems.length;
+    var basePercentage = 1 / possibleItems.length; // warning: could use nonLimitedItems so that limited units doesnt mess up the calculation
 
     if (this.state.selectedBanner.limited) {
       // TODO: Logica para banners con unidades limitadas, como Ramza & Orlandeau
@@ -66,7 +66,7 @@ class Gacha extends React.Component {
           )
         ) {
           // This means the current item is featured, the key is found in the current banner
-          spec[`${item.key}`] = (basePercentage * 1.25).toFixed(3);
+          spec[`${item.key}`] = (basePercentage * 4).toFixed(3);
         } else {
           // No featured item banner
           spec[`${item.key}`] = basePercentage.toFixed(3);
@@ -77,7 +77,7 @@ class Gacha extends React.Component {
   };
 
   // It requires key and weight properties loaded in data
-  // Will work for weighting rarity and type, then which item is selected
+  // Will work for weighting rarity and type, then which item is selected.
   buildSpec = (data) => {
     var spec = {};
     data.map((item) => {
