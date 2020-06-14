@@ -7,7 +7,7 @@
     },
     {
       "key": 2,
-      "limited": false,
+      "limited": true,
       "name": "Gilgamesh"
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "key": 41,
-      "limited": false,
+      "limited": true,
       "name": "Thancred"
     },
     {
@@ -107,11 +107,6 @@
     }
   ],
   "mr_unit": [
-    {
-      "key": 11,
-      "limited": false,
-      "name": "Mont"
-    },
     {
       "key": 12,
       "limited": false,
@@ -365,11 +360,6 @@
     },
     {
       "key": 51,
-      "limited": false,
-      "Name": "default"
-    },
-    {
-      "key": 52,
       "limited": false,
       "Name": "default"
     }
