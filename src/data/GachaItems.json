@@ -104,6 +104,11 @@
       "key": 59,
       "limited": false,
       "name": "Lu'Cia"
+    },
+    {
+      "key": 61,
+      "limited": false,
+      "name": "Viktora"
     }
   ],
   "mr_unit": [
@@ -211,6 +216,11 @@
       "key": 60,
       "limited": false,
       "name": "Adelard"
+    },
+    {
+      "key": 62,
+      "limited": false,
+      "name": "Salire"
     }
   ],
   "sr_unit": [
@@ -362,6 +372,11 @@
       "key": 51,
       "limited": false,
       "Name": "Gale-Begetting Heavenly Four, Tetra Sylphid"
+    },
+    {
+      "key": 54,
+      "limited": false,
+      "Name": "Secrets of the Heart"
     }
   ],
   "mr_card": [
@@ -439,6 +454,16 @@
       "key": 52,
       "limited": false,
       "Name": "Path to Revenge"
+    },
+    {
+      "key": 55,
+      "limited": false,
+      "Name": "Admirers' Rivalry"
+    },
+    {
+      "key": 56,
+      "limited": false,
+      "Name": "pending"
     }
   ],
   "sr_card": [

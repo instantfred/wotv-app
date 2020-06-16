@@ -7,6 +7,14 @@
     {
       "value": "lucia_adelard",
       "label": "Lu'Cia & Adelard"
+    },
+    {
+      "value": "raid_celebration",
+      "label": "RAID CELEBRATION"
+    },
+    {
+      "value": "viktora_salire",
+      "label": "Viktora & Salire"
     }
   ],
   "miranda_dorando": {
@@ -16,24 +24,6 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/miranda_dorando.jpg",
-    "featured_items": [
-      {
-        "key": 57,
-        "type": "unit"
-      },
-      {
-        "key": 58,
-        "type": "unit"
-      },
-      {
-        "key": 47,
-        "type": "card"
-      },
-      {
-        "key": 48,
-        "type": "card"
-      }
-    ],
     "gacha_items": [
       {
         "key": 57,
@@ -72,24 +62,6 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/lucia_adelard.jpg",
-    "featured_items": [
-      {
-        "key": 59,
-        "type": "unit"
-      },
-      {
-        "key": 60,
-        "type": "unit"
-      },
-      {
-        "key": 51,
-        "type": "card"
-      },
-      {
-        "key": 52,
-        "type": "card"
-      }
-    ],
     "gacha_items": [
       {
         "key": 59,
@@ -115,6 +87,82 @@
       {
         "key": 52,
         "name": "The Road to Vengeance",
+        "rarity": "mr",
+        "type": "card",
+        "chance": 1.50092
+      }
+    ]
+  },
+  "raid_celebration": {
+    "value": 3,
+    "key": "raid_celebration",
+    "label": "RAID CELEBRATION",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/raid_celebration.jpg",
+    "gacha_items": [
+      {
+        "key": 47,
+        "name": "Yerma",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 56,
+        "name": "Kitone",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 48,
+        "name": "Nasha",
+        "rarity": "mr",
+        "type": "unit",
+        "chance": 1.50092
+      },
+      {
+        "key": 54,
+        "name": "Secrets of the Heart",
+        "rarity": "ur",
+        "type": "card",
+        "chance": 0.80098
+      },
+      {
+        "key": 55,
+        "name": "Admirers' Rivalry",
+        "rarity": "mr",
+        "type": "card",
+        "chance": 1.50092
+      }
+    ]
+  },
+  "viktora_salire": {
+    "value": 4,
+    "key": "viktora_salire",
+    "label": "Viktora & Salire",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/viktora_salire.jpg",
+    "gacha_items": [
+      {
+        "key": 61,
+        "name": "Viktora",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 62,
+        "name": "Salire",
+        "rarity": "mr",
+        "type": "unit",
+        "chance": 1.50092
+      },
+      {
+        "key": 56,
+        "name": "pending",
         "rarity": "mr",
         "type": "card",
         "chance": 1.50092
