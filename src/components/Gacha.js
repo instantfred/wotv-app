@@ -30,17 +30,42 @@ class Gacha extends React.Component {
   };
 
   multiSummon = (event) => {
-    var results = [];
     event.preventDefault();
+    var results = [];
+    var itemsToPick = [];
     this.addVisiore(2000);
+    // Generate the rarity and type of item to summon
     for (var i = 0; i < 10; i++) {
-      var partialResult = this.buildSpec(unitCardWeights.data)();
-      results.push({
-        id: this.gachaItemPicker(gachaItems[partialResult])(),
-        type: partialResult,
-      });
+      var rarityAndType = this.buildSpec(unitCardWeights.data)();
+      itemsToPick.push(rarityAndType);
     }
+    itemsToPick = this.guaranteedMrPlus(itemsToPick);
+    itemsToPick.forEach((item) => {
+      results.push({
+        id: this.gachaItemPicker(gachaItems[item])(),
+        type: item,
+      });
+    });
+
     this.setState({ summonResult: results });
+  };
+
+  // Checks for any mr/ur. If none then adds one mr+ item.
+  guaranteedMrPlus = (itemsToPick) => {
+    const rareItemIds = ["ur_unit", "ur_card", "mr_unit", "mr_card"];
+    if (rareItemIds.some((item) => itemsToPick.includes(item))) {
+    } else {
+      console.log("Rolling extra guaranteed Mr+ item.");
+      itemsToPick.splice(-1, 1);
+      var guaranteedItem = this.buildSpec([
+        { key: "ur_unit", weight: 2 },
+        { key: "ur_card", weight: 2 },
+        { key: "mr_unit", weight: 46 },
+        { key: "mr_card", weight: 46 },
+      ])();
+      itemsToPick.push(guaranteedItem);
+    }
+    return itemsToPick;
   };
 
   addVisiore = (value) => {
@@ -59,7 +84,7 @@ class Gacha extends React.Component {
     } else {
       // Filter out every non limited item and loop over them
       nonLimitedItems = possibleItems.filter((item) => item.limited === false);
-      nonLimitedItems.map((item, index) => {
+      nonLimitedItems.forEach((item, index) => {
         if (
           this.state.selectedBanner.gacha_items.some(
             (gi) => gi.key === item.key
@@ -80,7 +105,7 @@ class Gacha extends React.Component {
   // Will work for weighting rarity and type, then which item is selected.
   buildSpec = (data) => {
     var spec = {};
-    data.map((item) => {
+    data.forEach((item) => {
       spec[`${item.key}`] = item.weight;
     });
     return this.weightedRand(spec);
@@ -120,7 +145,7 @@ class Gacha extends React.Component {
   render() {
     let featuredItems;
     if (this.state.selectedBanner) {
-      featuredItems = this.state.selectedBanner.featured_items;
+      featuredItems = this.state.selectedBanner.gacha_items;
     }
 
     return (
