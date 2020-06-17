@@ -76,7 +76,7 @@ class Gacha extends React.Component {
   gachaItemPicker = (possibleItems) => {
     var spec = {};
     var nonLimitedItems = [];
-    var basePercentage = 1 / possibleItems.length; // warning: could use nonLimitedItems so that limited units doesnt mess up the calculation
+    var basePercentage = 1 / possibleItems.length;
 
     if (this.state.selectedBanner.limited) {
       // TODO: Logica para banners con unidades limitadas, como Ramza & Orlandeau
@@ -84,17 +84,28 @@ class Gacha extends React.Component {
     } else {
       // Filter out every non limited item and loop over them
       nonLimitedItems = possibleItems.filter((item) => item.limited === false);
+      var itemKeys = nonLimitedItems.map((a) => a.key);
+      // This means an item is featured, the key is found in the current banner
+      var includesFeaturedItem = this.state.selectedBanner.gacha_items.some(
+        (featuredItem) => itemKeys.includes(featuredItem.key)
+      );
+      if (includesFeaturedItem) {
+        // Since an item is featured it gets a 40% boost and the remaining items top at 60%
+        basePercentage = 0.6 / nonLimitedItems.length;
+      } else {
+        basePercentage = 1 / nonLimitedItems.length;
+      }
       nonLimitedItems.forEach((item, index) => {
         if (
           this.state.selectedBanner.gacha_items.some(
             (gi) => gi.key === item.key
           )
         ) {
-          // This means the current item is featured, the key is found in the current banner
-          spec[`${item.key}`] = (basePercentage * 4).toFixed(3);
+          // This means the current item is featured
+          spec[`${item.key}`] = 0.4;
         } else {
           // No featured item banner
-          spec[`${item.key}`] = basePercentage.toFixed(3);
+          spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
         }
       });
     }
