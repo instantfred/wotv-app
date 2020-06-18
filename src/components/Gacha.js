@@ -47,6 +47,11 @@ class Gacha extends React.Component {
       });
     });
 
+    // Send the UR items to the parent
+    this.props.gachaParentCallBack(
+      results.filter((result) => result.type.includes("ur"))
+    );
+
     this.setState({ summonResult: results });
   };
 
@@ -151,6 +156,8 @@ class Gacha extends React.Component {
     event.preventDefault();
     this.setState({ totalVisiore: 0 });
     this.setState({ showResults: false });
+    this.setState({ luckyPulls: [] });
+    this.props.gachaParentCallBack(null);
   };
 
   render() {

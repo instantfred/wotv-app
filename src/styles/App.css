@@ -144,3 +144,47 @@ div .featured-items {
   height: 19px;
   width: 15px;
 }
+
+div .gacha-log {
+  background-color: rgb(245, 245, 240);
+  border: 1px solid grey;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 488px;
+}
+.lucky-pulls {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 430px;
+  width: 100%;
+}
+.items-container {
+  display: flex;
+  max-width: 430px;
+  width: 100%;
+  overflow-y: auto;
+}
+.ur-container {
+  position: relative;
+  width: 70px;
+}
+.lucky-pull {
+  bottom: 8px;
+  height: 60px;
+  padding: 7px;
+  right: 16px;
+  width: 60px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  /* 1 pixel black shadow to left, top, right and bottom */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
