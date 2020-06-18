@@ -127,7 +127,7 @@ class Gacha extends React.Component {
         }
       });
     }
-    console.log(spec);
+    //console.log(spec);
     return this.weightedRand(spec);
   };
 
