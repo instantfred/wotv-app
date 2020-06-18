@@ -23,7 +23,14 @@ class Gacha extends React.Component {
     event.preventDefault();
     this.addVisiore(200);
     var partialResult = this.buildSpec(unitCardWeights.data)();
-    var result = this.gachaItemPicker(gachaItems[partialResult])();
+    var result = this.gachaItemPicker(
+      gachaItems[partialResult],
+      partialResult
+    )();
+    // Send the UR items to the parent
+    if (partialResult.includes("ur")) {
+      this.props.gachaParentCallBack([{ id: result, type: partialResult }]);
+    }
     this.setState({
       summonResult: [{ id: result, type: partialResult }],
     });
@@ -42,7 +49,7 @@ class Gacha extends React.Component {
     itemsToPick = this.guaranteedMrPlus(itemsToPick);
     itemsToPick.forEach((item) => {
       results.push({
-        id: this.gachaItemPicker(gachaItems[item])(),
+        id: this.gachaItemPicker(gachaItems[item], item)(),
         type: item,
       });
     });
@@ -78,15 +85,21 @@ class Gacha extends React.Component {
     this.setState({ showResults: true });
   };
 
-  gachaItemPicker = (possibleItems) => {
+  gachaItemPicker = (possibleItems, type) => {
     var spec = {};
     var nonLimitedItems = [];
     var basePercentage = 1 / possibleItems.length;
+    var lastPoolKey = 1000;
 
     if (this.state.selectedBanner.limited) {
       // TODO: Logica para banners con unidades limitadas, como Ramza & Orlandeau
       console.log("madre mia es un banner limitado");
     } else {
+      // Filter out every item from future banners
+      lastPoolKey = this.state.selectedBanner.gacha_items
+        .filter((item) => type.includes(item.type))
+        .slice(-1)[0].key;
+      possibleItems = possibleItems.filter((item) => item.key <= lastPoolKey);
       // Filter out every non limited item and loop over them
       nonLimitedItems = possibleItems.filter((item) => item.limited === false);
       var itemKeys = nonLimitedItems.map((a) => a.key);
@@ -95,8 +108,8 @@ class Gacha extends React.Component {
         (featuredItem) => itemKeys.includes(featuredItem.key)
       );
       if (includesFeaturedItem) {
-        // Since an item is featured it gets a 40% boost and the remaining items top at 60%
-        basePercentage = 0.6 / nonLimitedItems.length;
+        // Since an item is featured it gets a 30% boost and the remaining items top at 60%
+        basePercentage = 0.7 / nonLimitedItems.length;
       } else {
         basePercentage = 1 / nonLimitedItems.length;
       }
@@ -107,13 +120,14 @@ class Gacha extends React.Component {
           )
         ) {
           // This means the current item is featured
-          spec[`${item.key}`] = 0.4;
+          spec[`${item.key}`] = 0.3;
         } else {
           // No featured item banner
           spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
         }
       });
     }
+    console.log(spec);
     return this.weightedRand(spec);
   };
 
