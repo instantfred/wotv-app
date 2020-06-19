@@ -112,7 +112,7 @@ class Gacha extends React.Component {
       );
       if (includesFeaturedItem) {
         // Since an item is featured it gets a 30% boost and the remaining items top at 70%
-        basePercentage = 0.7 / bannerPool.length;
+        basePercentage = 0.75 / bannerPool.length;
       } else {
         basePercentage = 1 / bannerPool.length;
       }
@@ -125,7 +125,7 @@ class Gacha extends React.Component {
             // custom case for Salire
             spec[`${item.key}`] = 0.1;
           } else {
-            spec[`${item.key}`] = 0.3;
+            spec[`${item.key}`] = 0.25;
           }
         } else {
           // No featured item banner
