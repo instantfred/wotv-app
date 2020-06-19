@@ -90,6 +90,9 @@ class Gacha extends React.Component {
     var nonLimitedItems = [];
     var basePercentage = 1 / possibleItems.length;
     var lastPoolKey = 1000;
+    var featuredItemsByType = this.state.selectedBanner.gacha_items.filter(
+      (item) => type.includes(item.type)
+    );
 
     if (this.state.selectedBanner.limited) {
       // TODO: Logica para banners con unidades limitadas, como Ramza & Orlandeau
@@ -100,7 +103,7 @@ class Gacha extends React.Component {
         .filter((item) => type.includes(item.type))
         .slice(-1)[0].key;
       possibleItems = possibleItems.filter((item) => item.key <= lastPoolKey);
-      // Filter out every non limited item and loop over them
+      // Filter out every limited item
       nonLimitedItems = possibleItems.filter((item) => item.limited === false);
       var itemKeys = nonLimitedItems.map((a) => a.key);
       // This means an item is featured, the key is found in the current banner
@@ -108,26 +111,28 @@ class Gacha extends React.Component {
         (featuredItem) => itemKeys.includes(featuredItem.key)
       );
       if (includesFeaturedItem) {
-        // Since an item is featured it gets a 30% boost and the remaining items top at 60%
+        // Since an item is featured it gets a 30% boost and the remaining items top at 70%
         basePercentage = 0.7 / nonLimitedItems.length;
       } else {
         basePercentage = 1 / nonLimitedItems.length;
       }
       nonLimitedItems.forEach((item, index) => {
         if (
-          this.state.selectedBanner.gacha_items.some(
-            (gi) => gi.key === item.key
-          )
-        ) {
           // This means the current item is featured
-          spec[`${item.key}`] = 0.3;
+          featuredItemsByType.some((gi) => gi.key === item.key)
+        ) {
+          if (item.key === 62 && type.includes("unit")) {
+            // custom case for Salire
+            spec[`${item.key}`] = 0.2;
+          } else {
+            spec[`${item.key}`] = 0.3;
+          }
         } else {
           // No featured item banner
           spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
         }
       });
     }
-    //console.log(spec);
     return this.weightedRand(spec);
   };
 
