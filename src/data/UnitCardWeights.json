@@ -3,49 +3,49 @@
     {
       "key": "ur_unit",
       "rarity": "UR",
-      "weight": 2,
+      "weight": 0.02,
       "type": "unit"
     },
     {
       "key": "ur_card",
       "rarity": "UR",
-      "weight": 2,
+      "weight": 0.02,
       "type": "card"
     },
     {
       "key": "mr_unit",
       "rarity": "MR",
-      "weight": 8,
+      "weight": 0.08,
       "type": "unit"
     },
     {
       "key": "mr_card",
       "rarity": "MR",
-      "weight": 8,
+      "weight": 0.08,
       "type": "card"
     },
     {
       "key": "sr_unit",
       "rarity": "SR",
-      "weight": 31,
+      "weight": 0.31,
       "type": "unit"
     },
     {
       "key": "sr_card",
       "rarity": "SR",
-      "weight": 20,
+      "weight": 0.2,
       "type": "card"
     },
     {
       "key": "r_unit",
       "rarity": "R",
-      "weight": 8,
+      "weight": 0.08,
       "type": "unit"
     },
     {
       "key": "r_card",
       "rarity": "R",
-      "weight": 20,
+      "weight": 0.2,
       "type": "card"
     }
   ]
