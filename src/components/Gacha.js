@@ -87,7 +87,7 @@ class Gacha extends React.Component {
 
   gachaItemPicker = (possibleItems, type) => {
     var spec = {};
-    var nonLimitedItems = [];
+    var bannerPool = [];
     var basePercentage = 1 / possibleItems.length;
     var lastPoolKey = 1000;
     var featuredItemsByType = this.state.selectedBanner.gacha_items.filter(
@@ -99,31 +99,31 @@ class Gacha extends React.Component {
       console.log("madre mia es un banner limitado");
     } else {
       // Filter out every item from future banners
-      lastPoolKey = this.state.selectedBanner.gacha_items
-        .filter((item) => type.includes(item.type))
-        .slice(-1)[0].key;
+      lastPoolKey = featuredItemsByType.length
+        ? featuredItemsByType.slice(-1)[0].key
+        : lastPoolKey;
       possibleItems = possibleItems.filter((item) => item.key <= lastPoolKey);
       // Filter out every limited item
-      nonLimitedItems = possibleItems.filter((item) => item.limited === false);
-      var itemKeys = nonLimitedItems.map((a) => a.key);
+      bannerPool = possibleItems.filter((item) => item.limited === false);
       // This means an item is featured, the key is found in the current banner
       var includesFeaturedItem = this.state.selectedBanner.gacha_items.some(
-        (featuredItem) => itemKeys.includes(featuredItem.key)
+        (featuredItem) =>
+          bannerPool.map((a) => a.key).includes(featuredItem.key)
       );
       if (includesFeaturedItem) {
         // Since an item is featured it gets a 30% boost and the remaining items top at 70%
-        basePercentage = 0.7 / nonLimitedItems.length;
+        basePercentage = 0.7 / bannerPool.length;
       } else {
-        basePercentage = 1 / nonLimitedItems.length;
+        basePercentage = 1 / bannerPool.length;
       }
-      nonLimitedItems.forEach((item, index) => {
+      bannerPool.forEach((item, index) => {
         if (
           // This means the current item is featured
           featuredItemsByType.some((gi) => gi.key === item.key)
         ) {
           if (item.key === 62 && type.includes("unit")) {
             // custom case for Salire
-            spec[`${item.key}`] = 0.2;
+            spec[`${item.key}`] = 0.1;
           } else {
             spec[`${item.key}`] = 0.3;
           }
