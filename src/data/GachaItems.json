@@ -109,6 +109,11 @@
       "key": 61,
       "limited": false,
       "name": "Viktora"
+    },
+    {
+      "key": 63,
+      "limited": false,
+      "name": "Vinera"
     }
   ],
   "mr_unit": [
@@ -221,6 +226,11 @@
       "key": 62,
       "limited": false,
       "name": "Salire"
+    },
+    {
+      "key": 64,
+      "limited": false,
+      "name": "Dario Hourne"
     }
   ],
   "sr_unit": [
@@ -463,7 +473,7 @@
     {
       "key": 56,
       "limited": false,
-      "Name": "pending"
+      "Name": "Vigorous Vegetation, Ochu"
     }
   ],
   "sr_card": [

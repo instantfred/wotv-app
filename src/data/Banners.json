@@ -15,6 +15,10 @@
     {
       "value": "viktora_salire",
       "label": "Viktora & Salire"
+    },
+    {
+      "value": "vinera_dario",
+      "label": "Vinera & Dario (JP TEST)"
     }
   ],
   "miranda_dorando": {
@@ -165,6 +169,30 @@
         "name": "pending",
         "rarity": "mr",
         "type": "card",
+        "chance": 1.50092
+      }
+    ]
+  },
+  "vinera_dario": {
+    "value": 5,
+    "key": "viktora_salire",
+    "label": "Vinera & Dario",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/vinera_dario.jpg",
+    "gacha_items": [
+      {
+        "key": 63,
+        "name": "Vinera",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 64,
+        "name": "Dario Hourne",
+        "rarity": "mr",
+        "type": "unit",
         "chance": 1.50092
       }
     ]
