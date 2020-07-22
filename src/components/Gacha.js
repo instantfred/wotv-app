@@ -94,45 +94,48 @@ class Gacha extends React.Component {
       (item) => type.includes(item.type)
     );
 
+    // Filter out every item from future banners
+    lastPoolKey = featuredItemsByType.length
+      ? featuredItemsByType.slice(-1)[0].key
+      : lastPoolKey;
+    possibleItems = possibleItems.filter((item) => item.key <= lastPoolKey);
+    // Filter out every limited item, except if the banner is limited
+    bannerPool = possibleItems.filter((item) => item.limited === false);
     if (this.state.selectedBanner.limited) {
-      // TODO: Logica para banners con unidades limitadas, como Ramza & Orlandeau
-      console.log("madre mia es un banner limitado");
-    } else {
-      // Filter out every item from future banners
-      lastPoolKey = featuredItemsByType.length
-        ? featuredItemsByType.slice(-1)[0].key
-        : lastPoolKey;
-      possibleItems = possibleItems.filter((item) => item.key <= lastPoolKey);
-      // Filter out every limited item
-      bannerPool = possibleItems.filter((item) => item.limited === false);
-      // This means an item is featured, the key is found in the current banner
-      var includesFeaturedItem = this.state.selectedBanner.gacha_items.some(
-        (featuredItem) =>
-          bannerPool.map((a) => a.key).includes(featuredItem.key)
-      );
-      if (includesFeaturedItem) {
-        // Since an item is featured it gets a 30% boost and the remaining items top at 70%
-        basePercentage = 0.75 / bannerPool.length;
-      } else {
-        basePercentage = 1 / bannerPool.length;
-      }
-      bannerPool.forEach((item, index) => {
-        if (
-          // This means the current item is featured
-          featuredItemsByType.some((gi) => gi.key === item.key)
-        ) {
-          if (item.key === 62 && type.includes("unit")) {
-            // custom case for Salire
-            spec[`${item.key}`] = 0.1;
-          } else {
-            spec[`${item.key}`] = 0.25;
-          }
-        } else {
-          // No featured item banner
-          spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
+      if (type.includes("ur")) {
+        var limitedItems = featuredItemsByType.filter((item) => item.limited);
+        if (limitedItems.length > 0) {
+          bannerPool.push(limitedItems[0]);
         }
-      });
+      }
     }
+    // This means an item is featured, the key is found in the current banner
+    var includesFeaturedItem = this.state.selectedBanner.gacha_items.some(
+      (featuredItem) => bannerPool.map((a) => a.key).includes(featuredItem.key)
+    );
+    if (includesFeaturedItem) {
+      // Since an item is featured it gets a 25% boost and the remaining items top at 75%
+      basePercentage = 0.75 / bannerPool.length;
+    } else {
+      basePercentage = 1 / bannerPool.length;
+    }
+    bannerPool.forEach((item, index) => {
+      if (
+        // This means the current item is featured
+        featuredItemsByType.some((gi) => gi.key === item.key)
+      ) {
+        if (item.key === 62 && type.includes("unit")) {
+          // custom case for Salire
+          spec[`${item.key}`] = 0.1;
+        } else {
+          spec[`${item.key}`] = 0.25;
+        }
+      } else {
+        // No featured item banner
+        spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
+      }
+    });
+
     return this.weightedRand(spec);
   };
 
