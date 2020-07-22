@@ -114,6 +114,16 @@
       "key": 63,
       "limited": false,
       "name": "Vinera"
+    },
+    {
+      "key": 66,
+      "limited": false,
+      "name": "Rain"
+    },
+    {
+      "key": 67,
+      "limited": true,
+      "name": "Warrior of Light"
     }
   ],
   "mr_unit": [
@@ -387,6 +397,16 @@
       "key": 54,
       "limited": false,
       "Name": "Secrets of the Heart"
+    },
+    {
+      "key": 57,
+      "limited": false,
+      "Name": "Serpentine Onslaught, Two-Headed Dragon"
+    },
+    {
+      "key": 63,
+      "limited": false,
+      "Name": "Death Machine"
     }
   ],
   "mr_card": [
@@ -474,6 +494,21 @@
       "key": 56,
       "limited": false,
       "Name": "Vigorous Vegetation, Ochu"
+    },
+    {
+      "key": 58,
+      "limited": false,
+      "Name": "Envious Magician"
+    },
+    {
+      "key": 59,
+      "limited": false,
+      "Name": "The Perks of Having Charm"
+    },
+    {
+      "key": 60,
+      "limited": false,
+      "Name": "Deceptive Vows, Honest Souls"
     }
   ],
   "sr_card": [

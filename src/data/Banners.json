@@ -17,8 +17,16 @@
       "label": "Viktora & Salire"
     },
     {
+      "value": "rain_ramuh",
+      "label": "Rain & Ramuh"
+    },
+    {
       "value": "vinera_dario",
-      "label": "Vinera & Dario (JP TEST)"
+      "label": "Vinera & Dario"
+    },
+    {
+      "value": "warrior_light",
+      "label": "Warrior of Light & Death Machine (JP TEST LIMITED)"
     }
   ],
   "miranda_dorando": {
@@ -173,8 +181,32 @@
       }
     ]
   },
-  "vinera_dario": {
+  "rain_ramuh": {
     "value": 5,
+    "key": "rain_ramuh",
+    "label": "Rain & Ramuh",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/rain_ramuh.jpg",
+    "gacha_items": [
+      {
+        "key": 66,
+        "name": "Rain",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098
+      },
+      {
+        "key": 40,
+        "name": "Ramuh",
+        "rarity": "ur",
+        "type": "card",
+        "chance": 1.50092
+      }
+    ]
+  },
+  "vinera_dario": {
+    "value": 6,
     "key": "viktora_salire",
     "label": "Vinera & Dario",
     "price": 2000,
@@ -193,6 +225,31 @@
         "name": "Dario Hourne",
         "rarity": "mr",
         "type": "unit",
+        "chance": 1.50092
+      }
+    ]
+  },
+  "warrior_light": {
+    "value": 8,
+    "key": "warrior_light",
+    "label": "Warrior of Light & Death Machine",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/warrior_light.jpg",
+    "gacha_items": [
+      {
+        "key": 67,
+        "name": "Warrior of Light",
+        "rarity": "ur",
+        "type": "unit",
+        "chance": 0.80098,
+        "limited": true
+      },
+      {
+        "key": 63,
+        "name": "Death Machine",
+        "rarity": "ur",
+        "type": "card",
         "chance": 1.50092
       }
     ]
