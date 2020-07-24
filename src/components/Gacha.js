@@ -95,9 +95,9 @@ class Gacha extends React.Component {
     );
 
     // Filter out every item from future banners
-    lastPoolKey = featuredItemsByType.length
-      ? featuredItemsByType.slice(-1)[0].key
-      : lastPoolKey;
+    lastPoolKey = type.includes("unit")
+      ? this.state.selectedBanner.last_unit_key
+      : this.state.selectedBanner.last_card_key;
     possibleItems = possibleItems.filter((item) => item.key <= lastPoolKey);
     // Filter out every limited item, except if the banner is limited
     bannerPool = possibleItems.filter((item) => item.limited === false);
