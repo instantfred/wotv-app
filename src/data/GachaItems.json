@@ -112,16 +112,21 @@
     },
     {
       "key": 63,
-      "limited": false,
-      "name": "Vinera"
+      "limited": true,
+      "name": "Fryevia"
     },
     {
-      "key": 66,
+      "key": 64,
       "limited": false,
       "name": "Rain"
     },
     {
-      "key": 67,
+      "key": 65,
+      "limited": false,
+      "name": "Vinera Fennes"
+    },
+    {
+      "key": 68,
       "limited": true,
       "name": "Warrior of Light"
     }
@@ -238,7 +243,7 @@
       "name": "Salire"
     },
     {
-      "key": 64,
+      "key": 66,
       "limited": false,
       "name": "Dario Hourne"
     }

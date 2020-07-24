@@ -21,8 +21,16 @@
       "label": "Rain & Ramuh"
     },
     {
+      "value": "fryevia_ramuh",
+      "label": "Fryevia & Ramuh (Limited)"
+    },
+    {
       "value": "vinera_dario",
       "label": "Vinera & Dario"
+    },
+    {
+      "value": "serpentine_onslaught",
+      "label": "Serpentine Onslaught"
     },
     {
       "value": "warrior_light",
@@ -36,34 +44,32 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/miranda_dorando.jpg",
+    "last_unit_key": 58,
+    "last_card_key": 48,
     "gacha_items": [
       {
         "key": 57,
         "name": "Miranda",
         "rarity": "ur",
-        "type": "unit",
-        "chance": 0.80098
+        "type": "unit"
       },
       {
         "key": 58,
         "name": "Dorando",
         "rarity": "mr",
-        "type": "unit",
-        "chance": 1.50092
+        "type": "unit"
       },
       {
         "key": 47,
         "name": "Lamia Queen",
         "rarity": "mr",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
       },
       {
         "key": 48,
         "name": "White Bodyguard",
         "rarity": "mr",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
       }
     ]
   },
@@ -74,34 +80,32 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/lucia_adelard.jpg",
+    "last_unit_key": 60,
+    "last_card_key": 52,
     "gacha_items": [
       {
         "key": 59,
         "name": "Lu'Cia",
         "rarity": "ur",
-        "type": "unit",
-        "chance": 0.80098
+        "type": "unit"
       },
       {
         "key": 60,
         "name": "Adelard",
         "rarity": "mr",
-        "type": "unit",
-        "chance": 1.50092
+        "type": "unit"
       },
       {
         "key": 51,
         "name": "Tetra Sylphid",
         "rarity": "ur",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
       },
       {
         "key": 52,
         "name": "The Road to Vengeance",
         "rarity": "mr",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
       }
     ]
   },
@@ -112,41 +116,38 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/raid_celebration.jpg",
+    "last_unit_key": 60,
+    "last_card_key": 55,
     "gacha_items": [
       {
         "key": 47,
         "name": "Yerma",
         "rarity": "ur",
-        "type": "unit",
-        "chance": 0.80098
+        "type": "unit"
       },
       {
         "key": 56,
         "name": "Kitone",
         "rarity": "ur",
-        "type": "unit",
-        "chance": 0.80098
+        "type": "unit"
       },
       {
         "key": 48,
         "name": "Nasha",
         "rarity": "mr",
-        "type": "unit",
-        "chance": 1.50092
+        "type": "unit"
       },
       {
         "key": 54,
         "name": "Secrets of the Heart",
         "rarity": "ur",
-        "type": "card",
-        "chance": 0.80098
+        "type": "card"
       },
       {
         "key": 55,
         "name": "Admirers' Rivalry",
         "rarity": "mr",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
       }
     ]
   },
@@ -157,27 +158,51 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/viktora_salire.jpg",
+    "last_unit_key": 62,
+    "last_card_key": 56,
     "gacha_items": [
       {
         "key": 61,
         "name": "Viktora",
         "rarity": "ur",
-        "type": "unit",
-        "chance": 0.80098
+        "type": "unit"
       },
       {
         "key": 62,
         "name": "Salire",
         "rarity": "mr",
-        "type": "unit",
-        "chance": 1.50092
+        "type": "unit"
       },
       {
         "key": 56,
-        "name": "pending",
+        "name": "Ochu",
         "rarity": "mr",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
+      }
+    ]
+  },
+  "fryevia_ramuh": {
+    "value": 6,
+    "key": "fryevia_ramuh",
+    "label": "Fryevia & Ramuh",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/fryevia_ramuh.jpg",
+    "last_unit_key": 63,
+    "last_card_key": 55,
+    "gacha_items": [
+      {
+        "key": 63,
+        "name": "Fryevia",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
+      },
+      {
+        "key": 40,
+        "name": "Ramuh",
+        "rarity": "ur",
+        "type": "card"
       }
     ]
   },
@@ -186,42 +211,44 @@
     "key": "rain_ramuh",
     "label": "Rain & Ramuh",
     "price": 2000,
-    "limited": false,
+    "limited": true,
     "image_path": "/img/banners/rain_ramuh.jpg",
+    "last_unit_key": 64,
+    "last_card_key": 55,
     "gacha_items": [
       {
-        "key": 66,
+        "key": 64,
         "name": "Rain",
         "rarity": "ur",
-        "type": "unit",
-        "chance": 0.80098
+        "type": "unit"
       },
       {
         "key": 40,
         "name": "Ramuh",
         "rarity": "ur",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
       }
     ]
   },
   "vinera_dario": {
-    "value": 6,
+    "value": 7,
     "key": "viktora_salire",
     "label": "Vinera & Dario",
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/vinera_dario.jpg",
+    "last_unit_key": 66,
+    "last_card_key": 56,
     "gacha_items": [
       {
-        "key": 63,
+        "key": 65,
         "name": "Vinera",
         "rarity": "ur",
         "type": "unit",
         "chance": 0.80098
       },
       {
-        "key": 64,
+        "key": 66,
         "name": "Dario Hourne",
         "rarity": "mr",
         "type": "unit",
@@ -229,16 +256,54 @@
       }
     ]
   },
-  "warrior_light": {
+  "serpentine_onslaught": {
     "value": 8,
+    "key": "serpentine_onslaught",
+    "label": "Serpentine Onslaught",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/serpentine_onslaught.jpg",
+    "last_unit_key": 66,
+    "last_card_key": 60,
+    "gacha_items": [
+      {
+        "key": 57,
+        "name": "Serpentine Onslaught, Two-Headed Dragon",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 58,
+        "name": "Envious Magician",
+        "rarity": "mr",
+        "type": "card"
+      },
+      {
+        "key": 59,
+        "name": "The Perks of Having Charm",
+        "rarity": "mr",
+        "type": "card"
+      },
+      {
+        "key": 60,
+        "name": "Deceptive Vows, Honest Souls",
+        "rarity": "mr",
+        "type": "card"
+      }
+    ]
+  },
+  "warrior_light": {
+    "value": 9,
     "key": "warrior_light",
     "label": "Warrior of Light & Death Machine",
     "price": 2000,
     "limited": true,
     "image_path": "/img/banners/warrior_light.jpg",
+    "last_unit_key": 68,
+    "last_card_key": 63,
     "gacha_items": [
       {
-        "key": 67,
+        "key": 68,
         "name": "Warrior of Light",
         "rarity": "ur",
         "type": "unit",
