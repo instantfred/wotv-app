@@ -26,7 +26,11 @@ class App extends React.Component {
         <nav className="navbar">
           <div className="nav-title">Summon Simulator</div>
           <div className="donation">
-            <a href="https://ko-fi.com/F1F51J6VY" target="_blank">
+            <a
+              href="https://ko-fi.com/F1F51J6VY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="kofi-img"
                 src="https://cdn.ko-fi.com/cdn/kofi1.png?v=2"
