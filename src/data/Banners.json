@@ -1,40 +1,40 @@
 {
   "data": [
     {
-      "value": "miranda_dorando",
-      "label": "Miranda & Dorando"
-    },
-    {
-      "value": "lucia_adelard",
-      "label": "Lu'Cia & Adelard"
-    },
-    {
-      "value": "raid_celebration",
-      "label": "RAID CELEBRATION"
-    },
-    {
-      "value": "viktora_salire",
-      "label": "Viktora & Salire"
-    },
-    {
-      "value": "rain_ramuh",
-      "label": "Rain & Ramuh"
-    },
-    {
-      "value": "fryevia_ramuh",
-      "label": "Fryevia & Ramuh (Limited)"
-    },
-    {
-      "value": "vinera_dario",
-      "label": "Vinera & Dario"
+      "value": "warrior_light",
+      "label": "Warrior of Light & Death Machine (Pre release)"
     },
     {
       "value": "serpentine_onslaught",
       "label": "Serpentine Onslaught"
     },
     {
-      "value": "warrior_light",
-      "label": "Warrior of Light & Death Machine (JP TEST LIMITED)"
+      "value": "vinera_dario",
+      "label": "Vinera & Dario"
+    },
+    {
+      "value": "fryevia_ramuh",
+      "label": "Fryevia & Ramuh (Limited)"
+    },
+    {
+      "value": "rain_ramuh",
+      "label": "Rain & Ramuh"
+    },
+    {
+      "value": "viktora_salire",
+      "label": "Viktora & Salire"
+    },
+    {
+      "value": "raid_celebration",
+      "label": "RAID CELEBRATION"
+    },
+    {
+      "value": "lucia_adelard",
+      "label": "Lu'Cia & Adelard"
+    },
+    {
+      "value": "miranda_dorando",
+      "label": "Miranda & Dorando"
     }
   ],
   "miranda_dorando": {

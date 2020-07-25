@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <nav className="navbar">
-          <div className="nav-title">Summon Simulator</div>
+          <div className="nav-title">WotV Summon Simulator</div>
           <div className="donation">
             <a
               href="https://ko-fi.com/F1F51J6VY"

@@ -52,7 +52,7 @@ class GachaLog extends React.Component {
     return (
       <div className="gacha-log">
         <div className="lucky-pulls">
-          <h2>Lucky Pulls: {urItemsData.length}</h2>
+          Lucky Pulls: {urItemsData.length}
           <div className="items-container">
             {urCounters.map((item, index) => (
               <div className="ur-container" key={`${item.key}_${index}`}>
@@ -65,7 +65,10 @@ class GachaLog extends React.Component {
                     urItemObjects[item.key].id
                   )}
                 />
-                <div key={`${index}_${item.quantity}`} className="top-right">
+                <div
+                  key={`${index}_${item.quantity}`}
+                  className="item-quantity"
+                >
                   {item.quantity}
                 </div>
               </div>

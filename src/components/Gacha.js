@@ -195,7 +195,7 @@ class Gacha extends React.Component {
             <img
               src={
                 this.state.selectedBanner.image_path ||
-                "/img/banners/miranda_dorando.jpg"
+                banners[banners.data[0].value].image_path
               }
               alt="Pull Banner"
             />
@@ -207,7 +207,11 @@ class Gacha extends React.Component {
             />
           </div>
           <div className="featured-items">
-            <h4>Featured Unit / Vision Cards</h4>
+            {featuredItems && (
+              <div className="featured-title">
+                <p>Featured Units / Vision Cards</p>
+              </div>
+            )}
             {featuredItems &&
               featuredItems.map((item) => {
                 return (
@@ -259,16 +263,17 @@ class Gacha extends React.Component {
             ))}
           </div>
         )}
-
-        <div>
-          Total Spent:{" "}
-          <img
-            className="visiore-small"
-            src="img/misc/visiore_s.png"
-            alt="Visiore"
-          />{" "}
-          {this.state.totalVisiore}
-        </div>
+        {featuredItems && (
+          <div>
+            Total Spent:{" "}
+            <img
+              className="visiore-small"
+              src="img/misc/visiore_s.png"
+              alt="Visiore"
+            />{" "}
+            {this.state.totalVisiore}
+          </div>
+        )}
       </div>
     );
   }

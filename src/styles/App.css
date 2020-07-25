@@ -22,7 +22,7 @@
 .navbar .nav-title {
   display: inline-block;
   float: left;
-  font-size: x-large;
+  font-size: large;
   padding-left: 15px;
 }
 
@@ -52,7 +52,7 @@
 div .gacha-container {
   background-color: rgb(245, 245, 240);
   border: 1px solid grey;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-left: auto;
   margin-right: auto;
   max-width: 488px;
@@ -72,15 +72,20 @@ div .featured-items {
   text-align: center;
 }
 
+.featured-title {
+  font-weight: bold;
+  height: 30px;
+}
+
+.featured-title p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .featured-items .featured-item {
   height: 60px;
   padding: 7px;
   width: 60px;
-}
-
-.summon-buttons {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .summon-btn {
@@ -111,10 +116,10 @@ div .featured-items {
 .summon-results {
   border: grey solid 1px;
   background-color: blanchedalmond;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 430px;
   width: 100%;
 }
@@ -129,7 +134,7 @@ div .featured-items {
 .ur_unit {
   height: 70px;
   width: 70px;
-  border-radius: 10%;
+  border-radius: 15%;
   box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 20px #f0f,
     /* inner left magenta short */ inset -20px 0 20px #0ff,
     /* inner right cyan short */ inset 20px 0 300px #f0f,
@@ -138,6 +143,15 @@ div .featured-items {
     /* outer white */ -10px 0 30px #f0f,
     /* outer left magenta */ 10px 0 20px #0ff; /* outer right cyan */
 }
+/* .ur_card,
+.ur_unit {
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, rgb(255, 54, 47), #248aff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  filter: drop-shadow(2px 1px 3px #e877ff);
+} */
 
 .mr_card,
 .mr_unit {
@@ -166,13 +180,14 @@ div .gacha-log {
   max-width: 488px;
 }
 .lucky-pulls {
+  font-weight: bold;
   position: relative;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 9px;
   max-width: 430px;
+  text-align: center;
   width: 100%;
 }
 .items-container {
@@ -192,11 +207,24 @@ div .gacha-log {
   right: 16px;
   width: 60px;
 }
-.top-right {
+.item-quantity {
   position: absolute;
   top: 8px;
   right: 10px;
   /* 1 pixel black shadow to left, top, right and bottom */
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-items .featured-item {
+    height: 50px;
+    padding: 5px;
+    width: 50px;
+  }
+  .summon-results .summon-item {
+    height: 60px;
+    padding: 5px;
+    width: 60px;
+  }
 }
