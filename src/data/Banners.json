@@ -1,8 +1,12 @@
 {
   "data": [
     {
+      "value": "summer_2020_campaign",
+      "label": "Summer 2020 Campaign"
+    },
+    {
       "value": "warrior_light",
-      "label": "Warrior of Light & Death Machine (Pre release)"
+      "label": "Warrior of Light & Death Machine"
     },
     {
       "value": "serpentine_onslaught",
@@ -307,15 +311,43 @@
         "name": "Warrior of Light",
         "rarity": "ur",
         "type": "unit",
-        "chance": 0.80098,
         "limited": true
       },
       {
         "key": 63,
         "name": "Death Machine",
         "rarity": "ur",
-        "type": "card",
-        "chance": 1.50092
+        "type": "card"
+      }
+    ]
+  },
+  "summer_2020_campaign": {
+    "value": 10,
+    "key": "summer_2020_campaign",
+    "label": "Summer 2020 Campaign",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/summer_2020_campaign.jpg",
+    "last_unit_key": 66,
+    "last_card_key": 60,
+    "gacha_items": [
+      {
+        "key": 4,
+        "name": "Mediena",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 57,
+        "name": "Miranda",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 18,
+        "name": "Owe",
+        "rarity": "mr",
+        "type": "unit"
       }
     ]
   }
