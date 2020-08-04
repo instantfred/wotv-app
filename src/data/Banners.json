@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "kilphe_seymore",
+      "label": "Kilphe & Seymore (Pre release)"
+    },
+    {
       "value": "summer_2020_campaign",
       "label": "Summer 2020 Campaign"
     },
@@ -346,6 +350,30 @@
       {
         "key": 18,
         "name": "Owe",
+        "rarity": "mr",
+        "type": "unit"
+      }
+    ]
+  },
+  "kilphe_seymore": {
+    "value": 11,
+    "key": "kilphe_seymore",
+    "label": "Kilphe & Seymore",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/kilphe_seymore.jpg",
+    "last_unit_key": 70,
+    "last_card_key": 60,
+    "gacha_items": [
+      {
+        "key": 69,
+        "name": "Kilphe",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 70,
+        "name": "Seymore",
         "rarity": "mr",
         "type": "unit"
       }

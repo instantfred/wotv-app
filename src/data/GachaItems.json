@@ -129,6 +129,11 @@
       "key": 68,
       "limited": true,
       "name": "Warrior of Light"
+    },
+    {
+      "key": 69,
+      "limited": false,
+      "name": "Kilphe"
     }
   ],
   "mr_unit": [
@@ -246,6 +251,11 @@
       "key": 66,
       "limited": false,
       "name": "Dario Hourne"
+    },
+    {
+      "key": 70,
+      "limited": false,
+      "name": "Seymore"
     }
   ],
   "sr_unit": [
@@ -410,7 +420,7 @@
     },
     {
       "key": 63,
-      "limited": false,
+      "limited": true,
       "Name": "Death Machine"
     }
   ],
