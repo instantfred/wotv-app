@@ -368,6 +368,7 @@
     "image_path": "/img/banners/raid_support_rob.jpg",
     "last_unit_key": 66,
     "last_card_key": 60,
+    "summon_gauge": true,
     "gacha_items": [
       {
         "key": 7,
@@ -398,6 +399,7 @@
     "image_path": "/img/banners/kilphe_seymore.jpg",
     "last_unit_key": 70,
     "last_card_key": 60,
+    "summon_gauge": true,
     "gacha_items": [
       {
         "key": 69,

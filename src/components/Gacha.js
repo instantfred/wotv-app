@@ -12,11 +12,12 @@ class Gacha extends React.Component {
     showResults: false,
     summonResult: {},
     totalVisiore: 0,
+    summonGauge: 0,
   };
 
   handleBannerChange = (event) => {
     this.setState({ selectedBanner: banners[event.value] });
-    this.setState({ enableSummon: true });
+    this.setState({ enableSummon: true, summonGauge: 0 });
   };
 
   singleSummon = (event) => {
@@ -54,12 +55,50 @@ class Gacha extends React.Component {
       });
     });
 
+    var urItems = results.filter((result) => result.type.includes("ur"));
+    // Updates the Summon Gauge and Adds the guaranteed UR
+    if (this.state.selectedBanner.summon_gauge) {
+      results = this.handleSummonGauge(urItems, results);
+      urItems = results.filter((result) => result.type.includes("ur"));
+    }
     // Send the UR items to the parent
-    this.props.gachaParentCallBack(
-      results.filter((result) => result.type.includes("ur"))
-    );
+    this.props.gachaParentCallBack(urItems);
 
     this.setState({ summonResult: results });
+  };
+
+  handleSummonGauge = (urItems, results) => {
+    // Increases the Summon Gauge
+    if (urItems.length === 0 && this.state.summonGauge < 100) {
+      this.setState({ summonGauge: this.state.summonGauge + 20 });
+    } else if (urItems.length === 0 && this.state.summonGauge >= 100) {
+      // trigger UR summon
+      results = this.guaranteedUrItem(results);
+    } else if (urItems.length > 0 && this.state.summonGauge >= 100) {
+      // If a UR rolls naturally, there's no need for the bonus.
+      this.setState({ summonGauge: 0 });
+    }
+    return results;
+  };
+
+  // Guarantees a UR item when the Summon Gauche reaches 100.
+  guaranteedUrItem = (results) => {
+    // trigger UR summon
+    console.log("Summon Gauge UR bonus");
+
+    var urBonusType = this.buildSpec([
+      { key: "ur_unit", weight: 50 },
+      { key: "ur_card", weight: 50 },
+    ])();
+    var urBonusId = this.gachaItemPicker(
+      gachaItems[urBonusType],
+      urBonusType
+    )();
+    results.splice(-1, 1);
+    results.push({ id: urBonusId, type: urBonusType });
+    this.setState({ summonGauge: 0 });
+
+    return results;
   };
 
   // Checks for any mr/ur. If none then adds one mr+ item.
@@ -176,9 +215,12 @@ class Gacha extends React.Component {
 
   resetSummons = (event) => {
     event.preventDefault();
-    this.setState({ totalVisiore: 0 });
-    this.setState({ showResults: false });
-    this.setState({ luckyPulls: [] });
+    this.setState({
+      totalVisiore: 0,
+      showResults: false,
+      luckyPulls: [],
+      summonGauge: 0,
+    });
     this.props.gachaParentCallBack(null);
   };
 
@@ -223,6 +265,13 @@ class Gacha extends React.Component {
                   />
                 );
               })}
+          </div>
+          <div className="summon-gauge">
+            {this.state.selectedBanner.summon_gauge && (
+              <progress value={this.state.summonGauge} max="100">
+                {`${this.state.summonGauge}%`}
+              </progress>
+            )}
           </div>
           <div className="summon-buttons">
             {this.state.enableSummon && (
