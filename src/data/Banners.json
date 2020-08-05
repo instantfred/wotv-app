@@ -2,7 +2,11 @@
   "data": [
     {
       "value": "kilphe_seymore",
-      "label": "Kilphe & Seymore (Pre release)"
+      "label": "Kilphe & Seymore"
+    },
+    {
+      "value": "raid_support_rob",
+      "label": "Raid Support - Rob Hourne"
     },
     {
       "value": "summer_2020_campaign",
@@ -355,8 +359,38 @@
       }
     ]
   },
-  "kilphe_seymore": {
+  "raid_support_rob": {
     "value": 11,
+    "key": "raid_support_rob",
+    "label": "Raid Support Rob Hourne",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/raid_support_rob.jpg",
+    "last_unit_key": 66,
+    "last_card_key": 60,
+    "gacha_items": [
+      {
+        "key": 7,
+        "name": "Rob Hourne",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 33,
+        "name": "Echoing Screams",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 37,
+        "name": "Secret Orders",
+        "rarity": "mr",
+        "type": "card"
+      }
+    ]
+  },
+  "kilphe_seymore": {
+    "value": 12,
     "key": "kilphe_seymore",
     "label": "Kilphe & Seymore",
     "price": 2000,
