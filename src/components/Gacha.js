@@ -71,12 +71,12 @@ class Gacha extends React.Component {
     // Increases the Summon Gauge
     if (urItems.length === 0 && this.state.summonGauge < 100) {
       this.setState({ summonGauge: this.state.summonGauge + 20 });
-    } else if (urItems.length === 0 && this.state.summonGauge >= 100) {
+    } else if (/* urItems.length === 0 &&*/ this.state.summonGauge >= 100) {
       // trigger UR summon
       results = this.guaranteedUrItem(results);
-    } else if (urItems.length > 0 && this.state.summonGauge >= 100) {
+      //} else if (urItems.length > 0 && this.state.summonGauge >= 100) {
       // If a UR rolls naturally, there's no need for the bonus.
-      this.setState({ summonGauge: 0 });
+      // this.setState({ summonGauge: 0 });
     }
     return results;
   };
@@ -95,7 +95,7 @@ class Gacha extends React.Component {
       urBonusType
     )();
     results.splice(-1, 1);
-    results.push({ id: urBonusId, type: urBonusType });
+    results.unshift({ id: urBonusId, type: urBonusType });
     this.setState({ summonGauge: 0 });
 
     return results;
