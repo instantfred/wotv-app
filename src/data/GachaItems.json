@@ -422,6 +422,16 @@
       "key": 63,
       "limited": true,
       "Name": "Death Machine"
+    },
+    {
+      "key": 64,
+      "limited": false,
+      "Name": "Dream Fiend, Diabolos"
+    },
+    {
+      "key": 65,
+      "limited": false,
+      "Name": "Fleeting Blossom Banquet"
     }
   ],
   "mr_card": [

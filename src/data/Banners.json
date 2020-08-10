@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "diablos",
+      "label": "Diablos & Fleeting Blossom Banquet"
+    },
+    {
       "value": "kilphe_seymore",
       "label": "Kilphe & Seymore"
     },
@@ -412,6 +416,31 @@
         "name": "Seymore",
         "rarity": "mr",
         "type": "unit"
+      }
+    ]
+  },
+  "diablos": {
+    "value": 13,
+    "key": "diablos",
+    "label": "Diablos & Fleeting Blossom Banquet",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/diablos.jpg",
+    "last_unit_key": 70,
+    "last_card_key": 65,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 64,
+        "name": "Diablos",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 65,
+        "name": "Fleeting Blossom Banquet",
+        "rarity": "ur",
+        "type": "card"
       }
     ]
   }
