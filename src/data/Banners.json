@@ -1,8 +1,12 @@
 {
   "data": [
     {
-      "value": "diablos",
-      "label": "Diablos & Fleeting Blossom Banquet"
+      "value": "diabolos",
+      "label": "Diabolos & Fleeting Blossom Banquet"
+    },
+    {
+      "value": "lucia_adelard_chp8",
+      "label": "Lucia & Adelard (Chapter 8 Release)"
     },
     {
       "value": "kilphe_seymore",
@@ -419,20 +423,45 @@
       }
     ]
   },
-  "diablos": {
+  "lucia_adelard_chp8": {
     "value": 13,
-    "key": "diablos",
-    "label": "Diablos & Fleeting Blossom Banquet",
+    "key": "lucia_adelard_chp8",
+    "label": "Lucia & Adelard (Chapter 8 Release)",
     "price": 2000,
     "limited": false,
-    "image_path": "/img/banners/diablos.jpg",
+    "image_path": "/img/banners/lucia_adelard_chp8.jpg",
+    "last_unit_key": 70,
+    "last_card_key": 60,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 59,
+        "name": "Lucia",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 60,
+        "name": "Adelard",
+        "rarity": "mr",
+        "type": "unit"
+      }
+    ]
+  },
+  "diabolos": {
+    "value": 14,
+    "key": "diabolos",
+    "label": "Diabolos & Fleeting Blossom Banquet",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/diabolos.jpg",
     "last_unit_key": 70,
     "last_card_key": 65,
     "summon_gauge": true,
     "gacha_items": [
       {
         "key": 64,
-        "name": "Diablos",
+        "name": "Diabolos",
         "rarity": "ur",
         "type": "card"
       },
