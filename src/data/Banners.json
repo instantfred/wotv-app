@@ -333,7 +333,8 @@
         "key": 63,
         "name": "Death Machine",
         "rarity": "ur",
-        "type": "card"
+        "type": "card",
+        "limited": true
       }
     ]
   },
