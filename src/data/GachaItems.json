@@ -7,7 +7,7 @@
     },
     {
       "key": 2,
-      "limited": true,
+      "limited": false,
       "name": "Gilgamesh"
     },
     {
@@ -134,6 +134,21 @@
       "key": 69,
       "limited": false,
       "name": "Kilphe"
+    },
+    {
+      "key": 71,
+      "limited": false,
+      "name": "Oldoa"
+    },
+    {
+      "key": 73,
+      "limited": true,
+      "name": "Delita"
+    },
+    {
+      "key": 74,
+      "limited": true,
+      "name": "Agrias"
     }
   ],
   "mr_unit": [
@@ -256,6 +271,16 @@
       "key": 70,
       "limited": false,
       "name": "Seymore"
+    },
+    {
+      "key": 72,
+      "limited": false,
+      "name": "Lavies"
+    },
+    {
+      "key": 75,
+      "limited": false,
+      "name": "Mustadio"
     }
   ],
   "sr_unit": [
@@ -432,6 +457,11 @@
       "key": 65,
       "limited": false,
       "Name": "Fleeting Blossom Banquet"
+    },
+    {
+      "key": 66,
+      "limited": true,
+      "Name": "Reed Pipe"
     }
   ],
   "mr_card": [
@@ -534,6 +564,11 @@
       "key": 60,
       "limited": false,
       "Name": "Deceptive Vows, Honest Souls"
+    },
+    {
+      "key": 67,
+      "Name": "Red Chocobo",
+      "limited": false
     }
   ],
   "sr_card": [

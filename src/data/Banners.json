@@ -1,6 +1,18 @@
 {
   "data": [
     {
+      "value": "agrias_mustadio",
+      "label": "FFT: Agrias & Mustadio (Limited)"
+    },
+    {
+      "value": "delita_mustadio",
+      "label": "FFT: Delita & Mustadio (Limited)"
+    },
+    {
+      "value": "oldoa_lavies",
+      "label": "Oldoa & Lavies (Pre release)"
+    },
+    {
       "value": "diabolos",
       "label": "Diabolos & Fleeting Blossom Banquet"
     },
@@ -456,7 +468,7 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/diabolos.jpg",
-    "last_unit_key": 70,
+    "last_unit_key": 66,
     "last_card_key": 65,
     "summon_gauge": true,
     "gacha_items": [
@@ -470,6 +482,109 @@
         "key": 65,
         "name": "Fleeting Blossom Banquet",
         "rarity": "ur",
+        "type": "card"
+      }
+    ]
+  },
+  "oldoa_lavies": {
+    "value": 15,
+    "key": "oldoa_lavies",
+    "label": "Oldoa & Lavies",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/oldoa_lavies.jpg",
+    "last_unit_key": 72,
+    "last_card_key": 65,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 71,
+        "name": "Oldoa",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 72,
+        "name": "Lavies",
+        "rarity": "ur",
+        "type": "unit"
+      }
+    ]
+  },
+  "delita_mustadio": {
+    "value": 16,
+    "key": "delita_mustadio",
+    "label": "Delita & Mustadio",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/delita_mustadio.jpg",
+    "last_unit_key": 75,
+    "last_card_key": 67,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 73,
+        "name": "Delita",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 75,
+        "name": "Mustadio",
+        "rarity": "mr",
+        "type": "unit"
+      },
+      {
+        "key": 66,
+        "name": "Reed Pipe",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
+      },
+      {
+        "key": 67,
+        "name": "Red Chocobo",
+        "rarity": "mr",
+        "type": "card"
+      }
+    ]
+  },
+  "agrias_mustadio": {
+    "value": 17,
+    "key": "agrias_mustadio",
+    "label": "Agrias & Mustadio",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/agrias_mustadio.jpg",
+    "last_unit_key": 75,
+    "last_card_key": 67,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 74,
+        "name": "Agrias",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 75,
+        "name": "Mustadio",
+        "rarity": "mr",
+        "type": "unit"
+      },
+      {
+        "key": 66,
+        "name": "Reed Pipe",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
+      },
+      {
+        "key": 67,
+        "name": "Red Chocobo",
+        "rarity": "mr",
         "type": "card"
       }
     ]
