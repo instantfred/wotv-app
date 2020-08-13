@@ -166,12 +166,20 @@ class Gacha extends React.Component {
         if (item.key === 62 && type.includes("unit")) {
           // custom case for Salire
           spec[`${item.key}`] = 0.1;
+        } else if (item.key === 2 && type.includes("unit")) {
+          // custom case for Gilgamesh
+          spec[`${item.key}`] = basePercentage / 2;
         } else {
           spec[`${item.key}`] = 0.25;
         }
       } else {
         // No featured item banner
-        spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
+        if (type.includes("ur_unit") && item.key === 2) {
+          // custom case for Gilgamesh
+          spec[`${item.key}`] = parseFloat((basePercentage / 2).toFixed(3));
+        } else {
+          spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
+        }
       }
     });
 
