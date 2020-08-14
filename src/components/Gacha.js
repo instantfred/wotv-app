@@ -41,6 +41,7 @@ class Gacha extends React.Component {
     event.preventDefault();
     var results = [];
     var itemsToPick = [];
+    var urItems = {};
     this.addVisiore(2000);
     // Generate the rarity and type of item to summon
     for (var i = 0; i < 10; i++) {
@@ -55,14 +56,14 @@ class Gacha extends React.Component {
       });
     });
 
-    var urItems = results.filter((result) => result.type.includes("ur"));
     // Updates the Summon Gauge and Adds the guaranteed UR
     if (this.state.selectedBanner.summon_gauge) {
-      results = this.handleSummonGauge(urItems, results);
       urItems = results.filter((result) => result.type.includes("ur"));
+      results = this.handleSummonGauge(urItems, results);
     }
-    // Send the UR items to the parent
-    this.props.gachaParentCallBack(urItems);
+    urItems = results.filter((result) => result.type.includes("ur"));
+    // Send the UR items to the parent + Featured MR items
+    this.props.gachaParentCallBack(urItems.concat(this.featuredMrItems(results)));
 
     this.setState({ summonResult: results });
   };
@@ -117,6 +118,22 @@ class Gacha extends React.Component {
       itemsToPick.push(guaranteedItem);
     }
     return itemsToPick;
+  };
+
+  // Get the Mr Featured items to include them in the Lucky Pulls
+  featuredMrItems = (results) => {
+    var resultMrItems = results.filter((result) => result.type.includes("mr"));
+    var featuredMrItems = this.state.selectedBanner.gacha_items.filter((gi) => gi.rarity.includes("mr"));
+    var featuredResults = [];
+
+    featuredMrItems.forEach(featured => {
+      resultMrItems.forEach(result => {
+        if (parseInt(result.id) === featured.key){
+          featuredResults.push(result);
+        }
+      })
+    })
+    return featuredResults;
   };
 
   addVisiore = (value) => {
