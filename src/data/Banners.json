@@ -2,11 +2,11 @@
   "data": [
     {
       "value": "agrias_mustadio",
-      "label": "FFT: Agrias & Mustadio (Limited)"
+      "label": "FFT2: Agrias & Mustadio (Limited)"
     },
     {
       "value": "delita_mustadio",
-      "label": "FFT: Delita & Mustadio (Limited)"
+      "label": "FFT2: Delita & Mustadio (Limited)"
     },
     {
       "value": "oldoa_lavies",
@@ -506,7 +506,7 @@
       {
         "key": 72,
         "name": "Lavies",
-        "rarity": "ur",
+        "rarity": "mr",
         "type": "unit"
       }
     ]
