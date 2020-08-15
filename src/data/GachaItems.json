@@ -279,7 +279,7 @@
     },
     {
       "key": 75,
-      "limited": false,
+      "limited": true,
       "name": "Mustadio"
     }
   ],

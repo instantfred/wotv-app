@@ -28,9 +28,14 @@ class Gacha extends React.Component {
       gachaItems[partialResult],
       partialResult
     )();
-    // Send the UR items to the parent
+    // Send the UR/Featured MR items to the parent
+    var featuredMr = this.featuredMrItems([
+      { id: result, type: partialResult },
+    ]);
     if (partialResult.includes("ur")) {
       this.props.gachaParentCallBack([{ id: result, type: partialResult }]);
+    } else if (featuredMr.length > 0) {
+      this.props.gachaParentCallBack(featuredMr);
     }
     this.setState({
       summonResult: [{ id: result, type: partialResult }],
@@ -63,7 +68,9 @@ class Gacha extends React.Component {
     }
     urItems = results.filter((result) => result.type.includes("ur"));
     // Send the UR items to the parent + Featured MR items
-    this.props.gachaParentCallBack(urItems.concat(this.featuredMrItems(results)));
+    this.props.gachaParentCallBack(
+      urItems.concat(this.featuredMrItems(results))
+    );
 
     this.setState({ summonResult: results });
   };
@@ -123,16 +130,18 @@ class Gacha extends React.Component {
   // Get the Mr Featured items to include them in the Lucky Pulls
   featuredMrItems = (results) => {
     var resultMrItems = results.filter((result) => result.type.includes("mr"));
-    var featuredMrItems = this.state.selectedBanner.gacha_items.filter((gi) => gi.rarity.includes("mr"));
+    var featuredMrItems = this.state.selectedBanner.gacha_items.filter((gi) =>
+      gi.rarity.includes("mr")
+    );
     var featuredResults = [];
 
-    featuredMrItems.forEach(featured => {
-      resultMrItems.forEach(result => {
-        if (parseInt(result.id) === featured.key){
+    featuredMrItems.forEach((featured) => {
+      resultMrItems.forEach((result) => {
+        if (parseInt(result.id) === featured.key) {
           featuredResults.push(result);
         }
-      })
-    })
+      });
+    });
     return featuredResults;
   };
 
@@ -158,10 +167,12 @@ class Gacha extends React.Component {
     // Filter out every limited item, except if the banner is limited
     bannerPool = possibleItems.filter((item) => item.limited === false);
     if (this.state.selectedBanner.limited) {
-      if (type.includes("ur")) {
-        var limitedItems = featuredItemsByType.filter((item) => item.limited);
+      if (type.includes("ur") || type.includes("mr")) {
+        var limitedItems = featuredItemsByType.filter(
+          (item) => item.limited && type.includes(item.rarity)
+        );
         if (limitedItems.length > 0) {
-          bannerPool.push(limitedItems[0]);
+          bannerPool = bannerPool.concat(limitedItems);
         }
       }
     }

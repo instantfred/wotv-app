@@ -533,7 +533,8 @@
         "key": 75,
         "name": "Mustadio",
         "rarity": "mr",
-        "type": "unit"
+        "type": "unit",
+        "limited": "true"
       },
       {
         "key": 66,
@@ -572,7 +573,8 @@
         "key": 75,
         "name": "Mustadio",
         "rarity": "mr",
-        "type": "unit"
+        "type": "unit",
+        "limited": "true"
       },
       {
         "key": 66,
