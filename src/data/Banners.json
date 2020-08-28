@@ -547,7 +547,7 @@
     "price": 2000,
     "limited": true,
     "image_path": "/img/banners/delita_mustadio.jpg",
-    "last_unit_key": 75,
+    "last_unit_key": 70,
     "last_card_key": 67,
     "summon_gauge": true,
     "gacha_items": [
@@ -587,7 +587,7 @@
     "price": 2000,
     "limited": true,
     "image_path": "/img/banners/agrias_mustadio.jpg",
-    "last_unit_key": 75,
+    "last_unit_key": 70,
     "last_card_key": 67,
     "summon_gauge": true,
     "gacha_items": [
