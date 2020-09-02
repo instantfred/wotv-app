@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "value": "orlandeau_beoulve",
+      "label": "FFT2: Orlandeau & Scion of House Beoulve (Limited)"
+    },
+    {
+      "value": "ramza_beoulve",
+      "label": "FFT2: Ramza & Scion of House Beoulve (Limited)"
+    },
+    {
       "value": "agrias_mustadio",
       "label": "FFT2: Agrias & Mustadio (Limited)"
     },
@@ -617,6 +625,60 @@
         "name": "Red Chocobo",
         "rarity": "mr",
         "type": "card"
+      }
+    ]
+  },
+  "ramza_beoulve": {
+    "value": 19,
+    "key": "ramza_beoulve",
+    "label": "FFT2: Ramza & Scion of House Beoulve (Limited)",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ramza_beoulve.jpg",
+    "last_unit_key": 70,
+    "last_card_key": 67,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 52,
+        "name": "Ramza",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 43,
+        "name": "Scion of House Beoulve",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
+      }
+    ]
+  },
+  "orlandeau_beoulve": {
+    "value": 20,
+    "key": "orlandeau_beoulve",
+    "label": "FFT2: Orlandeau & Scion of House Beoulve (Limited)",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/orlandeau_beoulve.jpg",
+    "last_unit_key": 70,
+    "last_card_key": 67,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 53,
+        "name": "Orlandeau",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 43,
+        "name": "Scion of House Beoulve",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
       }
     ]
   }
