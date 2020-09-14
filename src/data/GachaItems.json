@@ -149,6 +149,16 @@
       "key": 74,
       "limited": true,
       "name": "Agrias"
+    },
+    {
+      "key": 76,
+      "limited": false,
+      "name": "Ildyra"
+    },
+    {
+      "key": 77,
+      "limited": false,
+      "name": "Ruin Sterne"
     }
   ],
   "mr_unit": [

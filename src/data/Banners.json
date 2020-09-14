@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "value": "guild_battle_supportive_summon",
+      "label": "Guild Battle Supportive Summon"
+    },
+    {
+      "value": "ildyra",
+      "label": "Ildyra"
+    },
+    {
       "value": "orlandeau_beoulve",
       "label": "FFT2: Orlandeau & Scion of House Beoulve (Limited)"
     },
@@ -679,6 +687,87 @@
         "rarity": "ur",
         "type": "card",
         "limited": "true"
+      }
+    ]
+  },
+  "ildyra": {
+    "value": 21,
+    "key": "ildyra",
+    "label": "Ildyra",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/ildyra.jpg",
+    "last_unit_key": 76,
+    "last_card_key": 67,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 76,
+        "name": "Ildyra",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "guild_battle_supportive_summon": {
+    "value": 22,
+    "key": "guild_battle_supportive_summon",
+    "label": "Guild Battle Supportive Summon",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/guild_battle_supportive_summon.jpg",
+    "last_unit_key": 72,
+    "last_card_key": 65,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 61,
+        "name": "Viktora",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 5,
+        "name": "Ayaka",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 48,
+        "name": "Nasha",
+        "rarity": "mr",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "ruin_sterne": {
+    "value": 100,
+    "key": "ruin_sterne",
+    "label": "Ruin Sterne",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/ruin_sterne.jpg",
+    "last_unit_key": 77,
+    "last_card_key": 67,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 77,
+        "name": "Ruin Sterne",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 1,
+        "name": "Sterne",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
       }
     ]
   }
