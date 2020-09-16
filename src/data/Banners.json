@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "value": "ffcc_collaborative",
+      "label": "FFCC Collaborative"
+    },
+    {
+      "value": "raid_support_lucia_miranda",
+      "label": "Raid Support - Lu'Cia, Miranda & Margritte"
+    },
+    {
       "value": "guild_battle_supportive_summon",
       "label": "Guild Battle Supportive Summon"
     },
@@ -740,6 +748,74 @@
         "name": "Nasha",
         "rarity": "mr",
         "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "raid_support_lucia_miranda": {
+    "value": 23,
+    "key": "raid_support_lucia_miranda",
+    "label": "Raid Support - Lu'Cia, Miranda & Margritte",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/raid_support_lucia_miranda.jpg",
+    "last_unit_key": 72,
+    "last_card_key": 65,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 57,
+        "name": "Miranda",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 59,
+        "name": "Lu'Cia",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 13,
+        "name": "Margritte",
+        "rarity": "mr",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "ffcc_collaborative": {
+    "value": 24,
+    "key": "ffcc_collaborative",
+    "label": "FFCC Collaborative",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/ffcc_collaborative.jpg",
+    "last_unit_key": 72,
+    "last_card_key": 70,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 68,
+        "name": "Hourne's First Division, <Solidus>",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 70,
+        "name": "Keepers of the Crystal",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 69,
+        "name": "Bursting Spirit, Mindflayer",
+        "rarity": "mr",
+        "type": "card",
         "limited": "false"
       }
     ]

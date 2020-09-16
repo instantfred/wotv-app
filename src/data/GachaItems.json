@@ -472,6 +472,16 @@
       "key": 66,
       "limited": true,
       "Name": "Reed Pipe"
+    },
+    {
+      "key": 68,
+      "limited": false,
+      "Name": "Hourne's First Division, <Solidus>"
+    },
+    {
+      "key": 70,
+      "limited": false,
+      "Name": "Keepers of the Crystal"
     }
   ],
   "mr_card": [
@@ -578,6 +588,11 @@
     {
       "key": 67,
       "Name": "Red Chocobo",
+      "limited": false
+    },
+    {
+      "key": 69,
+      "Name": "Bursting Spirit, Mindflayer",
       "limited": false
     }
   ],
