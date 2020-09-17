@@ -588,7 +588,7 @@
     {
       "key": 67,
       "Name": "Red Chocobo",
-      "limited": false
+      "limited": true
     },
     {
       "key": 69,

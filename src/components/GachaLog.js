@@ -2,6 +2,15 @@ import React from "react";
 import "../styles/App.css";
 
 class GachaLog extends React.Component {
+  state = {
+    displayStats: false,
+  };
+
+  handleStatsIconClick = (event) => {
+    var value = this.state.displayStats === false;
+    this.setState({ displayStats: value });
+  };
+
   getUrItemsData = () => {
     var partialResults = [];
 
@@ -15,7 +24,20 @@ class GachaLog extends React.Component {
     return partialResults;
   };
 
-  countUrItems = (items) => {
+  getItemsData = () => {
+    var partialResults = [];
+
+    this.props.pullResults.forEach((element) => {
+      partialResults.push({
+        key: `${element.id}_${element.type}`,
+        id: element.id,
+        type: element.type,
+      });
+    });
+    return partialResults;
+  };
+
+  countItems = (items) => {
     var counter = {};
 
     items.forEach(function (element) {
@@ -47,12 +69,23 @@ class GachaLog extends React.Component {
   render() {
     var urItemsData = this.getUrItemsData();
     var urItemObjects = this.arrayToObject(urItemsData, "key");
-    var urCounters = this.countUrItems(urItemsData);
+    var urCounters = this.countItems(urItemsData);
+
+    var resultsData = this.getItemsData();
+    var resultsObjects = this.arrayToObject(resultsData, "key");
+    var resultsCounters = this.countItems(resultsData);
+    resultsCounters.sort((a, b) => (a.quantity < b.quantity ? 1 : -1));
 
     return (
       <div className="gacha-log">
         <div className="lucky-pulls">
           Lucky Pulls: {urItemsData.length}
+          <img
+            className="stats-icon"
+            alt="Statistics"
+            src="img/misc/graph.png"
+            onClick={(event) => this.handleStatsIconClick(event)}
+          />
           <div className="items-container">
             {urCounters.map((item, index) => (
               <div className="ur-container" key={`${item.key}_${index}`}>
@@ -75,6 +108,40 @@ class GachaLog extends React.Component {
             ))}
           </div>
         </div>
+        {this.state.displayStats && (
+          <div className="pullResults">
+            <h2>Full Log & Appearance Rates</h2>
+            Total items: <strong>{resultsData.length}</strong>
+            <div className="stats-container">
+              {resultsCounters.map((item, index) => (
+                <div className="stats-data" key={`${item.key}_${index}`}>
+                  <img
+                    key={index}
+                    className={`stats-image ${resultsObjects[item.key].type}`}
+                    alt=""
+                    src={this.getImagePath(
+                      resultsObjects[item.key].type,
+                      resultsObjects[item.key].id
+                    )}
+                  />
+                  <div
+                    key={`${index}_${item.quantity}`}
+                    className="stats-quantity"
+                  >
+                    {item.quantity}
+                  </div>
+                  <div className="stats-percentage">{`${(
+                    (item.quantity / resultsData.length) *
+                    100
+                  ).toLocaleString("en-US", {
+                    maximumFractionDigits: 3,
+                    minimumFractionDigits: 0,
+                  })}%`}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     );
   }

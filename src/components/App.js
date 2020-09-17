@@ -9,6 +9,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       luckyPulls: [],
+      pullResults: [],
     };
   }
 
@@ -17,6 +18,16 @@ class App extends React.Component {
       this.setState({ luckyPulls: [] });
     } else {
       this.setState({ luckyPulls: urItems.concat(this.state.luckyPulls) });
+    }
+  };
+
+  gachaPullResultsCallBack = (results) => {
+    if (results === null) {
+      this.setState({ pullResults: [] });
+    } else {
+      this.setState({
+        pullResults: results.concat(this.state.pullResults),
+      });
     }
   };
 
@@ -39,8 +50,14 @@ class App extends React.Component {
             </a>
           </div>
         </nav>
-        <Gacha gachaParentCallBack={this.gachaCallBack} />
-        <GachaLog urItems={this.state.luckyPulls} />
+        <Gacha
+          gachaParentCallBack={this.gachaCallBack}
+          gachaPullResultsCallBack={this.gachaPullResultsCallBack}
+        />
+        <GachaLog
+          urItems={this.state.luckyPulls}
+          pullResults={this.state.pullResults}
+        />
       </div>
     );
   }

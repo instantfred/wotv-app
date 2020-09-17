@@ -37,6 +37,9 @@ class Gacha extends React.Component {
     } else if (featuredMr.length > 0) {
       this.props.gachaParentCallBack(featuredMr);
     }
+    // Send pull results to parent
+    this.props.gachaPullResultsCallBack([{ id: result, type: partialResult }]);
+
     this.setState({
       summonResult: [{ id: result, type: partialResult }],
     });
@@ -71,6 +74,8 @@ class Gacha extends React.Component {
     this.props.gachaParentCallBack(
       urItems.concat(this.featuredMrItems(results))
     );
+    // Send pull results to parent
+    this.props.gachaPullResultsCallBack(results);
 
     this.setState({ summonResult: results });
   };
@@ -79,12 +84,9 @@ class Gacha extends React.Component {
     // Increases the Summon Gauge
     if (urItems.length === 0 && this.state.summonGauge < 100) {
       this.setState({ summonGauge: this.state.summonGauge + 20 });
-    } else if (/* urItems.length === 0 &&*/ this.state.summonGauge >= 100) {
+    } else if (this.state.summonGauge >= 100) {
       // trigger UR summon
       results = this.guaranteedUrItem(results);
-      //} else if (urItems.length > 0 && this.state.summonGauge >= 100) {
-      // If a UR rolls naturally, there's no need for the bonus.
-      // this.setState({ summonGauge: 0 });
     }
     return results;
   };
@@ -194,23 +196,28 @@ class Gacha extends React.Component {
         if (item.key === 62 && type.includes("unit")) {
           // custom case for Salire
           spec[`${item.key}`] = 0.1;
-        } else if (item.key === 2 && type.includes("unit")) {
-          // custom case for Gilgamesh
-          spec[`${item.key}`] = basePercentage / 2;
+        } else if (
+          (item.key === 2 || item.key === 77) &&
+          type.includes("unit")
+        ) {
+          // custom case for Gilgamesh and Ruin Sterne
+          spec[`${item.key}`] = basePercentage * 2;
         } else {
           spec[`${item.key}`] = 0.25;
         }
       } else {
         // No featured item banner
-        if (type.includes("ur_unit") && item.key === 2) {
-          // custom case for Gilgamesh
+        if (type.includes("ur_unit") && (item.key === 2 || item.key === 77)) {
+          // custom case for Gilgamesh and Ruin Sterne
           spec[`${item.key}`] = parseFloat((basePercentage / 2).toFixed(3));
         } else {
           spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
         }
       }
     });
-
+    // if (type.includes("ur_unit")) {
+    //   console.log(spec);
+    // }
     return this.weightedRand(spec);
   };
 
@@ -258,6 +265,7 @@ class Gacha extends React.Component {
       summonGauge: 0,
     });
     this.props.gachaParentCallBack(null);
+    this.props.gachaPullResultsCallBack(null);
   };
 
   render() {
@@ -304,7 +312,11 @@ class Gacha extends React.Component {
           </div>
           <div className="summon-gauge">
             {this.state.selectedBanner.summon_gauge && (
-              <progress value={this.state.summonGauge} max="100">
+              <progress
+                className="custom-progress"
+                value={this.state.summonGauge}
+                max="100"
+              >
                 {`${this.state.summonGauge}%`}
               </progress>
             )}
