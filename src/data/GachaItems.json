@@ -480,7 +480,7 @@
     },
     {
       "key": 70,
-      "limited": false,
+      "limited": true,
       "Name": "Keepers of the Crystal"
     }
   ],

@@ -268,6 +268,13 @@ div .gacha-log {
     padding: 5px;
     width: 60px;
   }
+
+  .stats-icon {
+    height: 15px;
+    float: right;
+    width: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* Summon Gauge styles */

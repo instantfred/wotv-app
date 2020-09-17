@@ -791,7 +791,7 @@
     "key": "ffcc_collaborative",
     "label": "FFCC Collaborative",
     "price": 2000,
-    "limited": false,
+    "limited": true,
     "image_path": "/img/banners/ffcc_collaborative.jpg",
     "last_unit_key": 72,
     "last_card_key": 70,
@@ -809,7 +809,7 @@
         "name": "Keepers of the Crystal",
         "rarity": "ur",
         "type": "card",
-        "limited": "false"
+        "limited": "true"
       },
       {
         "key": 69,
