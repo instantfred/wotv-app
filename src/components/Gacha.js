@@ -201,7 +201,7 @@ class Gacha extends React.Component {
           type.includes("unit")
         ) {
           // custom case for Gilgamesh and Ruin Sterne
-          spec[`${item.key}`] = basePercentage * 2;
+          spec[`${item.key}`] = 0.12; //basePercentage * 2;
         } else {
           spec[`${item.key}`] = 0.25;
         }

@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "ruin_sterne",
+      "label": "Sterne Leonis Knight of Destruction"
+    },
+    {
       "value": "ffcc_collaborative",
       "label": "FFCC Collaborative"
     },
@@ -823,7 +827,7 @@
   "ruin_sterne": {
     "value": 100,
     "key": "ruin_sterne",
-    "label": "Ruin Sterne",
+    "label": "Sterne Leonis (Knight of Destruction)",
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/ruin_sterne.jpg",
