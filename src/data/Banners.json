@@ -5,6 +5,10 @@
       "label": "Sterne Leonis Knight of Destruction"
     },
     {
+      "value": "six_month_part_1",
+      "label": "Six-Month Anniversaty Part I"
+    },
+    {
       "value": "ffcc_collaborative",
       "label": "FFCC Collaborative"
     },
@@ -825,7 +829,7 @@
     ]
   },
   "ruin_sterne": {
-    "value": 100,
+    "value": 25,
     "key": "ruin_sterne",
     "label": "Sterne Leonis (Knight of Destruction)",
     "price": 2000,
@@ -845,6 +849,33 @@
       {
         "key": 1,
         "name": "Sterne",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "six_month_part_1": {
+    "value": 26,
+    "key": "six_month_part_1",
+    "label": "Six-Month Anniversaty Part I",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/six_month_part_1.jpg",
+    "last_unit_key": 76,
+    "last_card_key": 65,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 10,
+        "name": "Xixa",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 65,
+        "name": "Vinera",
         "rarity": "ur",
         "type": "unit",
         "limited": "false"
