@@ -608,7 +608,8 @@
         "key": 67,
         "name": "Red Chocobo",
         "rarity": "mr",
-        "type": "card"
+        "type": "card",
+        "limited": "true"
       }
     ]
   },
@@ -648,7 +649,8 @@
         "key": 67,
         "name": "Red Chocobo",
         "rarity": "mr",
-        "type": "card"
+        "type": "card",
+        "limited": "true"
       }
     ]
   },
@@ -844,7 +846,8 @@
         "name": "Ruin Sterne",
         "rarity": "ur",
         "type": "unit",
-        "limited": "false"
+        "limited": "false",
+        "cost": 100
       },
       {
         "key": 1,

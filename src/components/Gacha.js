@@ -182,9 +182,20 @@ class Gacha extends React.Component {
     var includesFeaturedItem = this.state.selectedBanner.gacha_items.some(
       (featuredItem) => bannerPool.map((a) => a.key).includes(featuredItem.key)
     );
+    var includesFeaturedSuperUr = this.state.selectedBanner.gacha_items.some(
+      (item) => item.cost === 100
+    );
+    var bannerOnlyIncludesCards = this.state.selectedBanner.gacha_items.every(
+      (item) => item.type === "card"
+    );
+
     if (includesFeaturedItem) {
-      // Since an item is featured it gets a 25% boost and the remaining items top at 75%
-      basePercentage = 0.75 / bannerPool.length;
+      if (includesFeaturedSuperUr) {
+        basePercentage = 0.4 / (bannerPool.length - 2); // 60(remaining %) - 20(super ur boost) = 40; length - 2 (featured and superUR)
+      } else {
+        // Since an item is featured it gets a 40% boost and the remaining items top at 60%
+        basePercentage = 0.6 / (bannerPool.length - 1); // length - 1 featured
+      }
     } else {
       basePercentage = 1 / bannerPool.length;
     }
@@ -196,27 +207,29 @@ class Gacha extends React.Component {
         if (item.key === 62 && type.includes("unit")) {
           // custom case for Salire
           spec[`${item.key}`] = 0.1;
-        } else if (
-          (item.key === 2 || item.key === 77) &&
-          type.includes("unit")
-        ) {
+        } else if (item.cost === 100 && type.includes("unit")) {
           // custom case for Gilgamesh and Ruin Sterne
-          spec[`${item.key}`] = 0.12; //basePercentage * 2;
+          spec[`${item.key}`] = 0.2002; //basePercentage * 2;
         } else {
-          spec[`${item.key}`] = 0.25;
+          spec[`${item.key}`] = 0.3999;
         }
       } else {
-        // No featured item banner
-        if (type.includes("ur_unit") && (item.key === 2 || item.key === 77)) {
+        // No featured item
+        if (bannerOnlyIncludesCards && type.includes("unit")) {
+          // current item is a unit, but only cards are featured so we use the normal basePercentage
+          basePercentage = 1 / bannerPool.length;
+        }
+        if (type.includes("ur_unit") && item.cost === 100) {
           // custom case for Gilgamesh and Ruin Sterne
-          spec[`${item.key}`] = parseFloat((basePercentage / 2).toFixed(3));
+          spec[`${item.key}`] = parseFloat((basePercentage / 2).toFixed(4));
         } else {
-          spec[`${item.key}`] = parseFloat(basePercentage.toFixed(3));
+          spec[`${item.key}`] = parseFloat(basePercentage.toFixed(4));
         }
       }
     });
-    // if (type.includes("ur_unit")) {
-    //   console.log(spec);
+    //if (type.includes("ur")) {
+    // console.log(spec);
+    // console.log(Object.keys(spec).length);
     // }
     return this.weightedRand(spec);
   };
@@ -234,7 +247,7 @@ class Gacha extends React.Component {
   weightedRand = (spec) => {
     // baseDecimalValue should be computed based on the weights in the spec.
     // E.g. the spec {0:0.999, 1:0.001} will break if 10 is the base. 100 would be needed.
-    const baseDecimalValue = 100;
+    const baseDecimalValue = 1000;
     var i,
       j,
       table = [];
