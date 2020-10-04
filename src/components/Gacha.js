@@ -188,6 +188,9 @@ class Gacha extends React.Component {
     var bannerOnlyIncludesCards = this.state.selectedBanner.gacha_items.every(
       (item) => item.type === "card"
     );
+    var bannerOnlyIncludesUnits = this.state.selectedBanner.gacha_items.every(
+      (item) => item.type === "unit"
+    );
 
     if (includesFeaturedItem) {
       if (includesFeaturedSuperUr) {
@@ -210,6 +213,9 @@ class Gacha extends React.Component {
         } else if (item.cost === 100 && type.includes("unit")) {
           // custom case for Gilgamesh and Ruin Sterne
           spec[`${item.key}`] = 0.2002; //basePercentage * 2;
+        } else if (type.includes("mr")) {
+          // MR gets a lower boost
+          spec[`${item.key}`] = 0.1999;
         } else {
           spec[`${item.key}`] = 0.3999;
         }
@@ -217,6 +223,9 @@ class Gacha extends React.Component {
         // No featured item
         if (bannerOnlyIncludesCards && type.includes("unit")) {
           // current item is a unit, but only cards are featured so we use the normal basePercentage
+          basePercentage = 1 / bannerPool.length;
+        } else if (bannerOnlyIncludesUnits && type.includes("card")) {
+          // current item is a card, but only units are featured so we use the normal basePercentage
           basePercentage = 1 / bannerPool.length;
         }
         if (type.includes("ur_unit") && item.cost === 100) {
@@ -227,9 +236,9 @@ class Gacha extends React.Component {
         }
       }
     });
-    //if (type.includes("ur")) {
-    // console.log(spec);
-    // console.log(Object.keys(spec).length);
+    // if (type.includes("ur") || type.includes("mr")) {
+    //   console.log(spec);
+    //   console.log(Object.keys(spec).length);
     // }
     return this.weightedRand(spec);
   };
