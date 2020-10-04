@@ -161,6 +161,11 @@
       "limited": false,
       "name": "Ruin Sterne",
       "cost": 100
+    },
+    {
+      "key": 79,
+      "limited": false,
+      "name": "Glaciela"
     }
   ],
   "mr_unit": [
@@ -293,6 +298,11 @@
       "key": 75,
       "limited": true,
       "name": "Mustadio"
+    },
+    {
+      "key": 80,
+      "limited": false,
+      "name": "Roleyla"
     }
   ],
   "sr_unit": [
@@ -484,6 +494,11 @@
       "key": 70,
       "limited": true,
       "Name": "Keepers of the Crystal"
+    },
+    {
+      "key": 71,
+      "limited": false,
+      "Name": "Moonlit Fang, Fenrir"
     }
   ],
   "mr_card": [
@@ -595,6 +610,11 @@
     {
       "key": 69,
       "Name": "Bursting Spirit, Mindflayer",
+      "limited": false
+    },
+    {
+      "key": 72,
+      "Name": "Unreaching Affection",
       "limited": false
     }
   ],

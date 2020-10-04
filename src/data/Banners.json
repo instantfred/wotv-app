@@ -1,6 +1,18 @@
 {
   "data": [
     {
+      "value": "glaciela_roleyla",
+      "label": "Glaciela & Roleyla"
+    },
+    {
+      "value": "fenrir_unreaching_affection",
+      "label": "Fenrir & Unreaching Affection"
+    },
+    {
+      "value": "six_month_part_2",
+      "label": "Six-Month Anniversaty Part 2"
+    },
+    {
       "value": "ruin_sterne",
       "label": "Sterne Leonis Knight of Destruction"
     },
@@ -880,6 +892,95 @@
         "key": 65,
         "name": "Vinera",
         "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "six_month_part_2": {
+    "value": 27,
+    "key": "six_month_part_2",
+    "label": "Six-Month Anniversaty Part II",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/six_month_part_2.jpg",
+    "last_unit_key": 76,
+    "last_card_key": 69,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 2,
+        "name": "Gilgamesh",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false",
+        "cost": 100
+      },
+      {
+        "key": 69,
+        "name": "Kilphe",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 72,
+        "name": "Raviesse",
+        "rarity": "mr",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "fenrir_unreaching_affection": {
+    "value": 28,
+    "key": "fenrir_unreaching_affection",
+    "label": "Fenrir",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/fenrir_unreaching_affection.jpg",
+    "last_unit_key": 76,
+    "last_card_key": 72,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 71,
+        "name": "Fenrir",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 72,
+        "name": "Unreaching Affection",
+        "rarity": "mr",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "glaciela_roleyla": {
+    "value": 29,
+    "key": "glaciela_roleyla",
+    "label": "Glaciela & Roleyla",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/glaciela_roleyla.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 72,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 79,
+        "name": "Glaciela",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 80,
+        "name": "Roleyla",
+        "rarity": "mr",
         "type": "unit",
         "limited": "false"
       }
