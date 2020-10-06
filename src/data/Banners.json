@@ -1,8 +1,12 @@
 {
   "data": [
     {
-      "value": "glaciela_roleyla",
-      "label": "Glaciela & Roleyla"
+      "value": "glaciela_loreila",
+      "label": "Glaciela & Loreila"
+    },
+    {
+      "value": "lasswell_rain",
+      "label": "Lasswell & Rain"
     },
     {
       "value": "fenrir_unreaching_affection",
@@ -959,13 +963,40 @@
       }
     ]
   },
-  "glaciela_roleyla": {
+  "lasswell_rain": {
     "value": 29,
-    "key": "glaciela_roleyla",
-    "label": "Glaciela & Roleyla",
+    "key": "lasswell_rain",
+    "label": "Lasswell & Rain",
     "price": 2000,
     "limited": false,
-    "image_path": "/img/banners/glaciela_roleyla.jpg",
+    "image_path": "/img/banners/lasswell_rain.jpg",
+    "last_unit_key": 79,
+    "last_card_key": 72,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 78,
+        "name": "Lasswell",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 64,
+        "name": "Rain",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "glaciela_loreila": {
+    "value": 30,
+    "key": "glaciela_roreila",
+    "label": "Glaciela & Loreila",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/glaciela_loreila.jpg",
     "last_unit_key": 80,
     "last_card_key": 72,
     "summon_gauge": true,
@@ -979,7 +1010,7 @@
       },
       {
         "key": 80,
-        "name": "Roleyla",
+        "name": "Loreila",
         "rarity": "mr",
         "type": "unit",
         "limited": "false"

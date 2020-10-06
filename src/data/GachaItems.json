@@ -163,6 +163,11 @@
       "cost": 100
     },
     {
+      "key": 78,
+      "limited": false,
+      "name": "Lasswell"
+    },
+    {
       "key": 79,
       "limited": false,
       "name": "Glaciela"
@@ -302,7 +307,7 @@
     {
       "key": 80,
       "limited": false,
-      "name": "Roleyla"
+      "name": "Loreila"
     }
   ],
   "sr_unit": [
