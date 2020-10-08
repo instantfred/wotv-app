@@ -1,12 +1,12 @@
 {
   "data": [
     {
-      "value": "glaciela_loreila",
-      "label": "Glaciela & Loreila"
+      "value": "glaciela_lasswell",
+      "label": "Glaciela, Lasswell & Loreila"
     },
     {
-      "value": "lasswell_rain",
-      "label": "Lasswell & Rain"
+      "value": "six_month_part_3",
+      "label": "Six-Month Anniversaty Part III"
     },
     {
       "value": "fenrir_unreaching_affection",
@@ -14,7 +14,7 @@
     },
     {
       "value": "six_month_part_2",
-      "label": "Six-Month Anniversaty Part 2"
+      "label": "Six-Month Anniversaty Part II"
     },
     {
       "value": "ruin_sterne",
@@ -963,14 +963,48 @@
       }
     ]
   },
-  "lasswell_rain": {
+  "six_month_part_3": {
     "value": 29,
     "key": "lasswell_rain",
-    "label": "Lasswell & Rain",
+    "label": "Six-Month Anniversaty Part 3",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/six_month_part_3.jpg",
+    "last_unit_key": 79,
+    "last_card_key": 72,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 63,
+        "name": "Fryevia",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 64,
+        "name": "Rain",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 44,
+        "name": "Odin",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "glaciela_lasswell": {
+    "value": 30,
+    "key": "glaciela_roreila",
+    "label": "Glaciela & Loreila",
     "price": 2000,
     "limited": false,
-    "image_path": "/img/banners/lasswell_rain.jpg",
-    "last_unit_key": 79,
+    "image_path": "/img/banners/glaciela_lasswell.jpg",
+    "last_unit_key": 80,
     "last_card_key": 72,
     "summon_gauge": true,
     "gacha_items": [
@@ -981,26 +1015,6 @@
         "type": "unit",
         "limited": "false"
       },
-      {
-        "key": 64,
-        "name": "Rain",
-        "rarity": "ur",
-        "type": "unit",
-        "limited": "false"
-      }
-    ]
-  },
-  "glaciela_loreila": {
-    "value": 30,
-    "key": "glaciela_roreila",
-    "label": "Glaciela & Loreila",
-    "price": 2000,
-    "limited": false,
-    "image_path": "/img/banners/glaciela_loreila.jpg",
-    "last_unit_key": 80,
-    "last_card_key": 72,
-    "summon_gauge": true,
-    "gacha_items": [
       {
         "key": 79,
         "name": "Glaciela",
