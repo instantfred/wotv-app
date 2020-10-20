@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "titan_four_lords",
+      "label": "Titan & The Four Warring Lords"
+    },
+    {
       "value": "glaciela_lasswell",
       "label": "Glaciela, Lasswell & Loreila"
     },
@@ -1027,6 +1031,33 @@
         "name": "Loreila",
         "rarity": "mr",
         "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "titan_four_lords": {
+    "value": 31,
+    "key": "titan_four_lords",
+    "label": "Titan & The Four Warring Lords",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/titan_four_lords.jpg",
+    "last_unit_key": 76,
+    "last_card_key": 74,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 73,
+        "name": "Titan",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 74,
+        "name": "The Four Warring Lords",
+        "rarity": "mr",
+        "type": "card",
         "limited": "false"
       }
     ]

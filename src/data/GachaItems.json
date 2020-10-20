@@ -504,6 +504,11 @@
       "key": 71,
       "limited": false,
       "Name": "Moonlit Fang, Fenrir"
+    },
+    {
+      "key": 73,
+      "limited": false,
+      "Name": "Raging Earth, Titan"
     }
   ],
   "mr_card": [
@@ -620,6 +625,11 @@
     {
       "key": 72,
       "Name": "Unreaching Affection",
+      "limited": false
+    },
+    {
+      "key": 74,
+      "Name": "The Four Warring Lords",
       "limited": false
     }
   ],
