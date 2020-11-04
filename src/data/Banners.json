@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "value": "howlet_skahal",
+      "label": "Howlet, Skahal, Mariale & Chel"
+    },
+    {
+      "value": "exorcists_mask_deceit",
+      "label": "Exorcists, Mask of Deceit & Bloody Moon"
+    },
+    {
+      "value": "halloween_campaing_2",
+      "label": "Halloween Campaing (Little Leela & Oldoa)"
+    },
+    {
+      "value": "halloween_campaing_1",
+      "label": "Halloween Campaing (Rairyuu & Oldoa)"
+    },
+    {
       "value": "titan_four_lords",
       "label": "Titan & The Four Warring Lords"
     },
@@ -1058,6 +1074,133 @@
         "name": "The Four Warring Lords",
         "rarity": "mr",
         "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "halloween_campaing_1": {
+    "value": 32,
+    "key": "halloween_campaing_1",
+    "label": "Halloween Campaing (Rairyuu & Oldoa)",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/halloween_campaing_1.jpg",
+    "last_unit_key": 82,
+    "last_card_key": 74,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 82,
+        "name": "Rairyuu",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 71,
+        "name": "Oldoa",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "halloween_campaing_2": {
+    "value": 33,
+    "key": "halloween_campaing_2",
+    "label": "Halloween Campaing (Little Leela & Oldoa)",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/halloween_campaing_2.jpg",
+    "last_unit_key": 81,
+    "last_card_key": 74,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 81,
+        "name": "Little Leela",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 71,
+        "name": "Oldoa",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },"exorcists_mask_deceit": {
+    "value": 34,
+    "key": "exorcists_mask_deceit",
+    "label": "Exorcists, Mask of Deceit & Bloody Moon",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/exorcists_mask_deceit.jpg",
+    "last_unit_key": 81,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 75,
+        "name": "Exorcists",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
+      },
+      {
+        "key": 76,
+        "name": "Mask of Deceit",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 77,
+        "name": "Netherwordly Crimson Orb, Bloody Moon",
+        "rarity": "mr",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },"howlet_skahal": {
+    "value": 35,
+    "key": "howlet_skahal",
+    "label": "Howlet, Skahal, Mariale & Chel",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/howlet_skahal.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 74,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 83,
+        "name": "Howlet",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 84,
+        "name": "Skahal",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 85,
+        "name": "Mariale",
+        "rarity": "mr",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 86,
+        "name": "Chel",
+        "rarity": "mr",
+        "type": "unit",
         "limited": "false"
       }
     ]

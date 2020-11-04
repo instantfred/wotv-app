@@ -171,6 +171,26 @@
       "key": 79,
       "limited": false,
       "name": "Glaciela"
+    },
+    {
+      "key": 81,
+      "limited": true,
+      "name": "Little Leela"
+    },
+    {
+      "key": 82,
+      "limited": true,
+      "name": "Rairyuu"
+    },
+    {
+      "key": 83,
+      "limited": false,
+      "name": "Howlet"
+    },
+    {
+      "key": 84,
+      "limited": false,
+      "name": "Skahal"
     }
   ],
   "mr_unit": [
@@ -308,6 +328,16 @@
       "key": 80,
       "limited": false,
       "name": "Loreila"
+    },
+    {
+      "key": 85,
+      "limited": false,
+      "name": "Mariale"
+    },
+    {
+      "key": 86,
+      "limited": false,
+      "name": "Chel"
     }
   ],
   "sr_unit": [
@@ -509,6 +539,16 @@
       "key": 73,
       "limited": false,
       "Name": "Raging Earth, Titan"
+    },
+    {
+      "key": 75,
+      "limited": true,
+      "Name": "Excorcist"
+    },
+    {
+      "key": 76,
+      "limited": false,
+      "Name": "Mask of Deceit"
     }
   ],
   "mr_card": [
@@ -631,6 +671,11 @@
       "key": 74,
       "Name": "The Four Warring Lords",
       "limited": false
+    },
+    {
+      "key": 77,
+      "limited": false,
+      "Name": "Bloody Moon"
     }
   ],
   "sr_card": [
