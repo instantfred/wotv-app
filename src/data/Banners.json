@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "luartha_titus",
+      "label": "Luartha & Titus"
+    },
+    {
       "value": "howlet_skahal",
       "label": "Howlet, Skahal, Mariale & Chel"
     },
@@ -1199,6 +1203,33 @@
       {
         "key": 86,
         "name": "Chel",
+        "rarity": "mr",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "luartha_titus": {
+    "value": 36,
+    "key": "luartha_titus",
+    "label": "",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/luartha_titus.jpg",
+    "last_unit_key": 89,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 88,
+        "name": "Luartha",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 89,
+        "name": "Titus",
         "rarity": "mr",
         "type": "unit",
         "limited": "false"

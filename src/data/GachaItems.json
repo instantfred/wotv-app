@@ -191,6 +191,11 @@
       "key": 84,
       "limited": false,
       "name": "Skahal"
+    },
+    {
+      "key": 88,
+      "limited": false,
+      "name": "Luartha"
     }
   ],
   "mr_unit": [
@@ -338,6 +343,11 @@
       "key": 86,
       "limited": false,
       "name": "Chel"
+    },
+    {
+      "key": 89,
+      "limited": false,
+      "name": "Titus"
     }
   ],
   "sr_unit": [
