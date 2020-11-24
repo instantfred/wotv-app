@@ -1,8 +1,24 @@
 {
   "data": [
     {
-      "value": "luartha_titus",
-      "label": "Luartha & Titus"
+      "value": "ff4_kain_demonwall",
+      "label": "Final Fantasy IV Collaboration: Kain & Demon Wall"
+    },
+    {
+      "value": "ff4_rosa_demonwall",
+      "label": "Final Fantasy IV Collaboration: Rosa & Demon Wall"
+    },
+    {
+      "value": "ff4_cecil",
+      "label": "Final Fantasy IV Collaboration: Cecil"
+    },
+    {
+      "value": "ildyra_frederika_chocobo",
+      "label": "Ildyra, Frederika & Beloved Sidekick, Chocobo"
+    },
+    {
+      "value": "aigaion_chivalrous_outlaws",
+      "label": "Aigaion & Chivalrous Outlaws, Rebeus"
     },
     {
       "value": "howlet_skahal",
@@ -1209,8 +1225,143 @@
       }
     ]
   },
-  "luartha_titus": {
+  "aigaion_chivalrous_outlaws": {
     "value": 36,
+    "key": "aigaion_chivalrous_outlaws",
+    "label": "Aigaion & Chivalrous Outlaws, <<Rebeus>>",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/aigaion_chivalrous_outlaws.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 79,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 78,
+        "name": "Aigaion",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 79,
+        "name": "Chivalrous Outlaws, <<Rebeus>>",
+        "rarity": "mr",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "ildyra_frederika_chocobo": {
+    "value": 37,
+    "key": "ildyra_frederika_chocobo",
+    "label": "Ildyra, Frederika & Beloved Sidekick, Chocobo",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/ildyra_frederika_chocobo.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 80,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 44,
+        "name": "Frederika",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 76,
+        "name": "Ildyra",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 80,
+        "name": "Beloved Sidekick, Chocobo",
+        "rarity": "mr",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "ff4_cecil": {
+    "value": 38,
+    "key": "cecil",
+    "label": "Final Fantasy IV Collaboration: Cecil",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ff4_cecil.jpg",
+    "last_unit_key": 87,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 87,
+        "name": "Cecil",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      }
+    ]
+  },
+  "ff4_rosa_demonwall": {
+    "value": 39,
+    "key": "ff4_rosa_demonwall",
+    "label": "Final Fantasy IV Collaboration: Rosa & Demon Wall",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ff4_rosa_demonwall.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 79,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 88,
+        "name": "Rosa",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 81,
+        "name": "Demon Wall",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
+      }
+    ]
+  },
+  "ff4_kain_demonwall": {
+    "value": 40,
+    "key": "ff4_kain_demonwall",
+    "label": "Final Fantasy IV Collaboration: Kain & Demon Wall",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ff4_kain_demonwall.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 79,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 89,
+        "name": "Kain",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 81,
+        "name": "Demon Wall",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "true"
+      }
+    ]
+  },
+  "luartha_titus": {
+    "value": 41,
     "key": "luartha_titus",
     "label": "",
     "price": 2000,
@@ -1221,14 +1372,14 @@
     "summon_gauge": true,
     "gacha_items": [
       {
-        "key": 88,
+        "key": 90,
         "name": "Luartha",
         "rarity": "ur",
         "type": "unit",
         "limited": "false"
       },
       {
-        "key": 89,
+        "key": 91,
         "name": "Titus",
         "rarity": "mr",
         "type": "unit",

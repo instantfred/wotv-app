@@ -193,7 +193,22 @@
       "name": "Skahal"
     },
     {
+      "key": 87,
+      "limited": true,
+      "name": "Cecil"
+    },
+    {
       "key": 88,
+      "limited": true,
+      "name": "Rosa"
+    },
+    {
+      "key": 89,
+      "limited": true,
+      "name": "Kain"
+    },
+    {
+      "key": 90,
       "limited": false,
       "name": "Luartha"
     }
@@ -345,7 +360,7 @@
       "name": "Chel"
     },
     {
-      "key": 89,
+      "key": 91,
       "limited": false,
       "name": "Titus"
     }
@@ -559,6 +574,16 @@
       "key": 76,
       "limited": false,
       "Name": "Mask of Deceit"
+    },
+    {
+      "key": 78,
+      "limited": false,
+      "Name": "Steel-Plated Destruction, Aigaion"
+    },
+    {
+      "key": 81,
+      "limited": true,
+      "Name": "Demon Wall"
     }
   ],
   "mr_card": [
@@ -686,6 +711,16 @@
       "key": 77,
       "limited": false,
       "Name": "Bloody Moon"
+    },
+    {
+      "key": 79,
+      "limited": false,
+      "Name": "Chivalrous Outlaws, <<Rebeus>>"
+    },
+    {
+      "key": 80,
+      "limited": false,
+      "Name": "Beloved Sidekick, Chocobo"
     }
   ],
   "sr_card": [
