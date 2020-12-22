@@ -584,6 +584,16 @@
       "key": 81,
       "limited": true,
       "Name": "Demon Wall"
+    },
+    {
+      "key": 82,
+      "limited": false,
+      "Name": "Holiday Party"
+    },
+    {
+      "key": 83,
+      "limited": false,
+      "Name": "New Test Subjects"
     }
   ],
   "mr_card": [
@@ -721,6 +731,11 @@
       "key": 80,
       "limited": false,
       "Name": "Beloved Sidekick, Chocobo"
+    },
+    {
+      "key": 84,
+      "limited": false,
+      "Name": "Fated Clash"
     }
   ],
   "sr_card": [

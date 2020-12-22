@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "value": "new_test_subjects",
+      "label": "New Test Subject & Fated Clash"
+    },
+    {
+      "value": "winter_festivities_lucia",
+      "label": "Winter Festivities Part II: Lu'Cia & Shadowlynx"
+    },
+    {
+      "value": "winter_festivities_ramada",
+      "label": "Winter Festivities: Ramada (Winter) & Winter Holiday Party"
+    },
+    {
+      "value": "winter_festivities_macherie",
+      "label": "Winter Festivities: Machérie (Winter) & Winter Holiday Party"
+    },
+    {
       "value": "ff4_kain_demonwall",
       "label": "Final Fantasy IV Collaboration: Kain & Demon Wall"
     },
@@ -1357,6 +1373,110 @@
         "rarity": "ur",
         "type": "card",
         "limited": "true"
+      }
+    ]
+  },
+  "winter_festivities_macherie": {
+    "value": 41,
+    "key": "winter_festivities_macherie",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/winter_festivities_macherie.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 50,
+        "name": "Macherie",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 82,
+        "name": "Winter Holiday Party",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "winter_festivities_ramada": {
+    "value": 42,
+    "key": "winter_festivities_ramada",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/winter_festivities_ramada.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 49,
+        "name": "Ramada",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      },
+      {
+        "key": 82,
+        "name": "Winter Holiday Party",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      }
+    ]
+  },
+  "winter_festivities_lucia": {
+    "value": 43,
+    "key": "winter_festivities_lucia",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/winter_festivities_lucia.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 59,
+        "name": "Lu'Cia",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "false"
+      },
+      {
+        "key": 45,
+        "name": "Shadowlynx",
+        "rarity": "mr",
+        "type": "unit",
+        "limited": "false"
+      }
+    ]
+  },
+  "new_test_subjects": {
+    "value": 44,
+    "key": "new_test_subjects",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/new_test_subjects.jpg",
+    "last_unit_key": 80,
+    "last_card_key": 84,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 83,
+        "name": "New Test Subjects",
+        "rarity": "ur",
+        "type": "card",
+        "limited": "false"
+      },
+      {
+        "key": 84,
+        "name": "Fated CLash",
+        "rarity": "mr",
+        "type": "card",
+        "limited": "false"
       }
     ]
   },
