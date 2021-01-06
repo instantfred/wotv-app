@@ -217,6 +217,11 @@
       "limited": true,
       "name": "Duane",
       "cost": 100
+    },
+    {
+      "key": 93,
+      "limited": false,
+      "name": "Niv'Lu"
     }
   ],
   "mr_unit": [
@@ -369,6 +374,11 @@
       "key": 91,
       "limited": false,
       "name": "Titus"
+    },
+    {
+      "key": 94,
+      "limited": false,
+      "name": "Livialle"
     }
   ],
   "sr_unit": [

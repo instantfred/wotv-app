@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "nivlu_livialle",
+      "label": "Niv'Lu & Livialle"
+    },
+    {
       "value": "downtime_blossoms",
       "label": "Downtime, Blossoms in the Dark & Tonberry"
     },
@@ -1545,7 +1549,7 @@
     ]
   },
   "downtime_blossoms": {
-    "value": 42,
+    "value": 43,
     "key": "downtime_blossoms",
     "price": 2000,
     "limited": false,
@@ -1562,7 +1566,7 @@
       },
       {
         "key": 87,
-        "name": "Blossoms in the Dard",
+        "name": "Blossoms in the Dark",
         "rarity": "ur",
         "type": "card"
       },
@@ -1571,6 +1575,30 @@
         "name": "Tonberry",
         "rarity": "mr",
         "type": "card"
+      }
+    ]
+  },
+  "nivlu_livialle": {
+    "value": 44,
+    "key": "nivlu_livialle",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/nivlu_livialle.jpg",
+    "last_unit_key": 94,
+    "last_card_key": 84,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 93,
+        "name": "Niv'lu",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 94,
+        "name": "Livialle",
+        "rarity": "mr",
+        "type": "unit"
       }
     ]
   }
