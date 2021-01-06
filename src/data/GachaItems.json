@@ -211,6 +211,12 @@
       "key": 90,
       "limited": false,
       "name": "Luartha"
+    },
+    {
+      "key": 92,
+      "limited": true,
+      "name": "Duane",
+      "cost": 100
     }
   ],
   "mr_unit": [
@@ -594,6 +600,21 @@
       "key": 83,
       "limited": false,
       "Name": "New Test Subjects"
+    },
+    {
+      "key": 85,
+      "limited": true,
+      "Name": "Irresistible Darkness"
+    },
+    {
+      "key": 86,
+      "limited": false,
+      "Name": "Downtime"
+    },
+    {
+      "key": 87,
+      "limited": false,
+      "Name": "Blossoms in the Dark"
     }
   ],
   "mr_card": [
@@ -736,6 +757,11 @@
       "key": 84,
       "limited": false,
       "Name": "Fated Clash"
+    },
+    {
+      "key": 88,
+      "limited": false,
+      "Name": "Grudge-Filled Lantern, Tonberry"
     }
   ],
   "sr_card": [

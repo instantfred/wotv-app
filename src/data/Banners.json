@@ -1,6 +1,18 @@
 {
   "data": [
     {
+      "value": "downtime_blossoms",
+      "label": "Downtime, Blossoms in the Dark & Tonberry"
+    },
+    {
+      "value": "duane_fryevia",
+      "label": "Winter Festivities: Duane & Fryevia"
+    },
+    {
+      "value": "luartha_tytas",
+      "label": "Winter Festivities: Luartha & Tytas"
+    },
+    {
       "value": "new_test_subjects",
       "label": "New Test Subject & Fated Clash"
     },
@@ -1480,14 +1492,14 @@
       }
     ]
   },
-  "luartha_titus": {
+  "luartha_tytas": {
     "value": 41,
-    "key": "luartha_titus",
+    "key": "luartha_tytas",
     "label": "",
     "price": 2000,
     "limited": false,
-    "image_path": "/img/banners/luartha_titus.jpg",
-    "last_unit_key": 89,
+    "image_path": "/img/banners/luartha_tytas.jpg",
+    "last_unit_key": 91,
     "last_card_key": 77,
     "summon_gauge": true,
     "gacha_items": [
@@ -1495,15 +1507,70 @@
         "key": 90,
         "name": "Luartha",
         "rarity": "ur",
-        "type": "unit",
-        "limited": "false"
+        "type": "unit"
       },
       {
         "key": 91,
-        "name": "Titus",
+        "name": "Tytas",
         "rarity": "mr",
+        "type": "unit"
+      }
+    ]
+  },
+  "duane_fryevia": {
+    "value": 42,
+    "key": "duane_fryevia",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/duane_fryevia.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 77,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 92,
+        "name": "Duane",
+        "rarity": "ur",
         "type": "unit",
-        "limited": "false"
+        "limited": "true",
+        "cost": 100
+      },
+      {
+        "key": 63,
+        "name": "Fryevia",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      }
+    ]
+  },
+  "downtime_blossoms": {
+    "value": 42,
+    "key": "downtime_blossoms",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/downtime_blossoms.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 88,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 86,
+        "name": "Downtime",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 87,
+        "name": "Blossoms in the Dard",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 88,
+        "name": "Tonberry",
+        "rarity": "mr",
+        "type": "card"
       }
     ]
   }
