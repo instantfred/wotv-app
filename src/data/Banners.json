@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "value": "blackrose_glacial",
+      "label": "Helena The Black Rose & Glacial"
+    },
+    {
+      "value": "sakura_ahlim",
+      "label": "Sakura & Sanctum Ahlim"
+    },
+    {
+      "value": "leviathan_sanctum_assassins",
+      "label": "Leviathan & Sanctum Assassins"
+    },
+    {
+      "value": "ff14_shadowbringers",
+      "label": "FFXIV: Shadowbringers"
+    },
+    {
       "value": "nivlu_livialle",
       "label": "Niv'Lu & Livialle"
     },
@@ -1599,6 +1615,119 @@
         "name": "Livialle",
         "rarity": "mr",
         "type": "unit"
+      }
+    ]
+  },
+  "ff14_shadowbringers": {
+    "value": 45,
+    "key": "ff14_shadowbringers",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ff14_shadowbringers.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 88,
+    "summon_gauge": false,
+    "gacha_items": [
+      {
+        "key": 41,
+        "name": "Thancred",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true",
+        "cost": 100
+      },
+      {
+        "key": 89,
+        "name": "Bringers of Shadows",
+        "rarity": "ur",
+        "type": "card",
+        "limited": true
+      },
+      {
+        "key": 1,
+        "name": "Scions",
+        "rarity": "ur",
+        "type": "card",
+        "limited": true
+      },
+      {
+        "key": 6,
+        "name": "ff14mr",
+        "rarity": "mr",
+        "type": "card",
+        "limited": true
+      }
+    ]
+  },
+  "leviathan_sanctum_assassins": {
+    "value": 46,
+    "key": "leviathan_sanctum_assassins",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/leviathan_sanctum_assassins.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 91,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 90,
+        "name": "Leviathan",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 91,
+        "name": "Sanctum Assassins",
+        "rarity": "mr",
+        "type": "card"
+      }
+    ]
+  },
+  "sakura_ahlim": {
+    "value": 47,
+    "key": "sakura_ahlim",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/sakura_ahlim.jpg",
+    "last_unit_key": 96,
+    "last_card_key": 88,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 95,
+        "name": "Sakura",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 96,
+        "name": "Ahlim",
+        "rarity": "mr",
+        "type": "unit"
+      }
+    ]
+  },
+  "blackrose_glacial": {
+    "value": 48,
+    "key": "blackrose_glacial",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/blackrose_glacial.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 93,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 92,
+        "name": "Black Rose",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 93,
+        "name": "Glacial",
+        "rarity": "mr",
+        "type": "card"
       }
     ]
   }

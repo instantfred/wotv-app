@@ -207,8 +207,8 @@ class Gacha extends React.Component {
         // This means the current item is featured
         featuredItemsByType.some((gi) => gi.key === item.key)
       ) {
-        if (item.key === 62 && type.includes("unit")) {
-          // custom case for Salire
+        if ((item.key === 62 || item.key === 96) && type.includes("unit")) {
+          // custom case for Salire or Ahlim
           spec[`${item.key}`] = 0.1;
         } else if (item.cost === 100 && type.includes("unit")) {
           // custom case for Gilgamesh and Ruin Sterne

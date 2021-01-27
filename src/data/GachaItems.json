@@ -54,7 +54,8 @@
     {
       "key": 41,
       "limited": true,
-      "name": "Thancred"
+      "name": "Thancred",
+      "cost": 100
     },
     {
       "key": 44,
@@ -222,6 +223,11 @@
       "key": 93,
       "limited": false,
       "name": "Niv'Lu"
+    },
+    {
+      "key": 95,
+      "limited": false,
+      "name": "Sakura"
     }
   ],
   "mr_unit": [
@@ -379,6 +385,11 @@
       "key": 94,
       "limited": false,
       "name": "Livialle"
+    },
+    {
+      "key": 96,
+      "limited": false,
+      "name": "Ahlim"
     }
   ],
   "sr_unit": [
@@ -625,6 +636,16 @@
       "key": 87,
       "limited": false,
       "Name": "Blossoms in the Dark"
+    },
+    {
+      "key": 90,
+      "limited": false,
+      "Name": "Divine Maelstrom, Leviathan"
+    },
+    {
+      "key": 92,
+      "limited": false,
+      "Name": "Helena The Black Rose"
     }
   ],
   "mr_card": [
@@ -772,6 +793,16 @@
       "key": 88,
       "limited": false,
       "Name": "Grudge-Filled Lantern, Tonberry"
+    },
+    {
+      "key": 91,
+      "limited": false,
+      "Name": "Sanctum Assassins"
+    },
+    {
+      "key": 93,
+      "limited": false,
+      "Name": "Glacial"
     }
   ],
   "sr_card": [
