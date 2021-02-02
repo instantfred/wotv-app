@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "rhaldor_ellshra",
+      "label": "Rhaldor & Ellshra"
+    },
+    {
       "value": "blackrose_glacial",
       "label": "Helena The Black Rose & Glacial"
     },
@@ -1728,6 +1732,30 @@
         "name": "Glacial",
         "rarity": "mr",
         "type": "card"
+      }
+    ]
+  },
+  "rhaldor_ellshra": {
+    "value": 49,
+    "key": "rhaldor_ellshra",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/rhaldor_ellshra.jpg",
+    "last_unit_key": 98,
+    "last_card_key": 88,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 97,
+        "name": "Rhaldor",
+        "rarity": "ur",
+        "type": "unit"
+      },
+      {
+        "key": 98,
+        "name": "Ellshra",
+        "rarity": "mr",
+        "type": "unit"
       }
     ]
   }

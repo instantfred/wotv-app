@@ -228,6 +228,11 @@
       "key": 95,
       "limited": false,
       "name": "Sakura"
+    },
+    {
+      "key": 97,
+      "limited": false,
+      "name": "Rhaldor"
     }
   ],
   "mr_unit": [
@@ -390,6 +395,11 @@
       "key": 96,
       "limited": false,
       "name": "Ahlim"
+    },
+    {
+      "key": 98,
+      "limited": false,
+      "name": "Ellshra"
     }
   ],
   "sr_unit": [
