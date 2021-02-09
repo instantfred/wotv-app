@@ -656,6 +656,11 @@
       "key": 92,
       "limited": false,
       "Name": "Helena The Black Rose"
+    },
+    {
+      "key": 94,
+      "limited": false,
+      "Name": "Typhon"
     }
   ],
   "mr_card": [
@@ -813,6 +818,11 @@
       "key": 93,
       "limited": false,
       "Name": "Glacial"
+    },
+    {
+      "key": 95,
+      "limited": false,
+      "Name": "Memories of Apples"
     }
   ],
   "sr_card": [

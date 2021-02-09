@@ -1,6 +1,10 @@
 {
   "data": [
     {
+      "value": "typhon_memories_apples",
+      "label": "Typhon & Memories of Apples"
+    },
+    {
       "value": "rhaldor_ellshra",
       "label": "Rhaldor & Ellshra"
     },
@@ -1756,6 +1760,30 @@
         "name": "Ellshra",
         "rarity": "mr",
         "type": "unit"
+      }
+    ]
+  },
+  "typhon_memories_apples": {
+    "value": 50,
+    "key": "typhon_memories_apples",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/typhon_memories_apples.jpg",
+    "last_unit_key": 86,
+    "last_card_key": 95,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 94,
+        "name": "Typhon",
+        "rarity": "ur",
+        "type": "card"
+      },
+      {
+        "key": 95,
+        "name": "Memories of Apples",
+        "rarity": "mr",
+        "type": "card"
       }
     ]
   }
