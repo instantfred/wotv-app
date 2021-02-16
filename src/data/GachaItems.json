@@ -233,6 +233,16 @@
       "key": 97,
       "limited": false,
       "name": "Rhaldor"
+    },
+    {
+      "key": 99,
+      "limited": true,
+      "name": "Vinera (Xmas)"
+    },
+    {
+      "key": 100,
+      "limited": true,
+      "name": "Viktora (Xmas)"
     }
   ],
   "mr_unit": [
