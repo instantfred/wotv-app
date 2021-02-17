@@ -1,5 +1,9 @@
 {
   "data": [
+      {
+      "value": "winter_vinera_viktora",
+      "label": "Winter's End 2021: Vinera (Winter) & Viktora (Winter)"
+    },
     {
       "value": "typhon_memories_apples",
       "label": "Typhon & Memories of Apples"
@@ -1771,7 +1775,7 @@
     "image_path": "/img/banners/typhon_memories_apples.jpg",
     "last_unit_key": 86,
     "last_card_key": 95,
-    "summon_gauge": true,
+    "summon_gauge": false,
     "gacha_items": [
       {
         "key": 94,
@@ -1784,6 +1788,32 @@
         "name": "Memories of Apples",
         "rarity": "mr",
         "type": "card"
+      }
+    ]
+  },
+   "winter_vinera_viktora": {
+    "value": 51,
+    "key": "winter_vinera_viktora",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/winter_vinera_viktora.jpg",
+    "last_unit_key": 100,
+    "last_card_key": 88,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 99,
+        "name": "Vinera (Winter)",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
+      },
+      {
+        "key": 100,
+        "name": "Viktora (Winter)",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
       }
     ]
   }
