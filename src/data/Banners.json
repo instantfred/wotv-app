@@ -1,8 +1,12 @@
 {
   "data": [
-      {
-      "value": "winter_vinera_viktora",
-      "label": "Winter's End 2021: Vinera (Winter) & Viktora (Winter)"
+    {
+      "value": "little_leela_marilith",
+      "label": "1st Anniversary Countdown: Little Leela (Halloween) & Marilith"
+    },
+    {
+      "value": "rairyuu_marilith",
+      "label": "1st Anniversary Countdown: Rairyuu (Halloween) & Marilith"
     },
     {
       "value": "typhon_memories_apples",
@@ -1773,7 +1777,7 @@
     "price": 2000,
     "limited": false,
     "image_path": "/img/banners/typhon_memories_apples.jpg",
-    "last_unit_key": 86,
+    "last_unit_key": 96,
     "last_card_key": 95,
     "summon_gauge": false,
     "gacha_items": [
@@ -1814,6 +1818,58 @@
         "rarity": "ur",
         "type": "unit",
         "limited": true
+      }
+    ]
+  },
+  "rairyuu_marilith": {
+    "value": 52,
+    "key": "rairyuu_marilith",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/rairyuu_marilith.jpg",
+    "last_unit_key": 95,
+    "last_card_key": 96,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 82,
+        "name": "Rairyuu (Halloween)",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
+      },
+      {
+        "key": 96,
+        "name": "Dancing Flame of Death, Marilith",
+        "rarity": "mr",
+        "type": "card",
+        "limited": false
+      }
+    ]
+  },
+  "little_leela_marilith": {
+    "value": 53,
+    "key": "little_leela_marilith",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/little_leela_marilith.jpg",
+    "last_unit_key": 95,
+    "last_card_key": 96,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 81,
+        "name": "Little Leela (Halloween)",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
+      },
+      {
+        "key": 96,
+        "name": "Dancing Flame of Death, Marilith",
+        "rarity": "mr",
+        "type": "card",
+        "limited": false
       }
     ]
   }

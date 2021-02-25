@@ -410,6 +410,11 @@
       "key": 98,
       "limited": false,
       "name": "Ellshra"
+    },
+    {
+      "key": 101,
+      "limited": true,
+      "name": "Creysse"
     }
   ],
   "sr_unit": [
@@ -833,6 +838,11 @@
       "key": 95,
       "limited": false,
       "Name": "Memories of Apples"
+    },
+    {
+      "key": 96,
+      "limited": false,
+      "Name": "Dancing Flame of Death, Marilith"
     }
   ],
   "sr_card": [
