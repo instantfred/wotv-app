@@ -243,6 +243,15 @@
       "key": 100,
       "limited": true,
       "name": "Viktora (Xmas)"
+    },
+    {
+      "key": 102,
+      "limited": false,
+      "name": "Elsirelle"
+    },{
+      "key": 103,
+      "limited": false,
+      "name": "Garvall"
     }
   ],
   "mr_unit": [
@@ -676,6 +685,11 @@
       "key": 94,
       "limited": false,
       "Name": "Typhon"
+    },
+    {
+      "key": 97,
+      "limited": false,
+      "Name": "Clairvoyant Astrologer"
     }
   ],
   "mr_card": [
@@ -843,6 +857,11 @@
       "key": 96,
       "limited": false,
       "Name": "Dancing Flame of Death, Marilith"
+    },
+    {
+      "key": 98,
+      "limited": false,
+      "Name": "Swordsmans's Refinementf"
     }
   ],
   "sr_card": [

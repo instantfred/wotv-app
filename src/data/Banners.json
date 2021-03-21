@@ -1,6 +1,18 @@
 {
   "data": [
     {
+      "value": "clairvoyant_astrologer",
+      "label": "Clairvoyant Astrologer & Swordsman's Refinement"
+    },
+    {
+      "value": "elsirelle_garvall",
+      "label": "Elsirelle & Garvall"
+    },
+    {
+      "value": "duane_fryevia_reissue",
+      "label": "Global Festival Reissue Summon: Duane & Fryevia"
+    },
+    {
       "value": "little_leela_marilith",
       "label": "1st Anniversary Countdown: Little Leela (Halloween) & Marilith"
     },
@@ -1867,6 +1879,85 @@
       {
         "key": 96,
         "name": "Dancing Flame of Death, Marilith",
+        "rarity": "mr",
+        "type": "card",
+        "limited": false
+      }
+    ]
+  },
+  "duane_fryevia_reissue": {
+    "value": 54,
+    "key": "elsirelle_garvall",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/duane_fryevia_reissue.jpg",
+    "last_unit_key": 92,
+    "last_card_key": 96,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 92,
+        "name": "Duane",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true",
+        "cost": 100
+      },
+      {
+        "key": 63,
+        "name": "Fryevia",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": "true"
+      }
+    ]
+  },
+  "elsirelle_garvall": {
+    "value": 55,
+    "key": "elsirelle_garvall",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/elsirelle_garvall.jpg",
+    "last_unit_key": 103,
+    "last_card_key": 95,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 102,
+        "name": "Elsirelle",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": false
+      },
+      {
+        "key": 103,
+        "name": "Garvall",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": false
+      }
+    ]
+  },
+  "clairvoyant_astrologer": {
+    "value": 56,
+    "key": "clairvoyant_astrologer",
+    "price": 2000,
+    "limited": false,
+    "image_path": "/img/banners/clairvoyant_astrologer.jpg",
+    "last_unit_key": 95,
+    "last_card_key": 98,
+    "summon_gauge": false,
+    "gacha_items": [
+      {
+        "key": 97,
+        "name": "Clairvoyant Astrologer",
+        "rarity": "ur",
+        "type": "card",
+        "limited": false
+      },
+      {
+        "key": 98,
+        "name": "Swordsman's Refinement",
         "rarity": "mr",
         "type": "card",
         "limited": false
