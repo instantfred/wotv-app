@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "value": "ffx_collab_yuna",
+      "label": "FFX Collaboration: Yuna"
+    },
+    {
+      "value": "ffx_collab_tidus",
+      "label": "FFX Collaboration: Tidus"
+    },
+    {
       "value": "clairvoyant_astrologer",
       "label": "Clairvoyant Astrologer & Swordsman's Refinement"
     },
@@ -1961,6 +1969,44 @@
         "rarity": "mr",
         "type": "card",
         "limited": false
+      }
+    ]
+  },
+  "ffx_collab_tidus": {
+    "value": 57,
+    "key": "ffx_collab_tidus",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ffx_collab_tidus.jpg",
+    "last_unit_key": 104,
+    "last_card_key": 96,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 104,
+        "name": "Tidus",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
+      }
+    ]
+  },
+  "ffx_collab_yuna": {
+    "value": 58,
+    "key": "ffx_collab_yuna",
+    "price": 2000,
+    "limited": true,
+    "image_path": "/img/banners/ffx_collab_yuna.jpg",
+    "last_unit_key": 105,
+    "last_card_key": 96,
+    "summon_gauge": true,
+    "gacha_items": [
+      {
+        "key": 105,
+        "name": "Yuna",
+        "rarity": "ur",
+        "type": "unit",
+        "limited": true
       }
     ]
   }

@@ -248,10 +248,26 @@
       "key": 102,
       "limited": false,
       "name": "Elsirelle"
-    },{
+    },
+    {
       "key": 103,
       "limited": false,
       "name": "Garvall"
+    },
+    {
+      "key": 104,
+      "limited": true,
+      "name": "Tidus"
+    },
+    {
+      "key": 105,
+      "limited": true,
+      "name": "Yuna"
+    },
+    {
+      "key": 106,
+      "limited": true,
+      "name": "Auron"
     }
   ],
   "mr_unit": [
